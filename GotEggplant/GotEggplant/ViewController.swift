@@ -27,6 +27,8 @@ import CloudKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
+    
     let database = CKContainer.default().privateCloudDatabase
     
     var counter: Int = 0
@@ -68,6 +70,10 @@ class ViewController: UIViewController {
             self.notes.remove(at: lastIndex)
             print("deleted successfully.")
         }
+    }
+    
+    @IBAction func button(_ sender: UIButton) {
+        label.text = "Testing UIkit"
     }
 }
 
