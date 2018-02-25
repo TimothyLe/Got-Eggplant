@@ -1,6 +1,6 @@
-# :ok_hand: Got-Eggplant :eggplant: :sweat_drops: :sweat_drops:
-Got Eggplant? :eggplant:
+# Got-Eggplant
+Got Eggplant? :eggplant: - Grocery list application
 
 CMPE 137: Swift Programming for Mobile Devices
 
-Project members: Thinh, David, Cherie, Tim
+Project members: Thinh Le, Cherie Sew, David Tran,  Timothy Wu
