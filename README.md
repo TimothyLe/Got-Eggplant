@@ -1,4 +1,4 @@
-# Got-Eggplant
+# Got Eggplant
 Got Eggplant? :eggplant: - Grocery list application
 
 CMPE 137: Swift Programming for Mobile Devices
