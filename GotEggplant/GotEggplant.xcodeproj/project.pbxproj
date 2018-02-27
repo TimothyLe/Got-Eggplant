@@ -14,6 +14,7 @@
 		220FBECE20427B1900A197C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FBECC20427B1900A197C5 /* LaunchScreen.storyboard */; };
 		220FBEDA20427B5100A197C5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBED920427B5100A197C5 /* CloudKit.framework */; };
 		220FBEDC20427B5600A197C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBEDB20427B5600A197C5 /* MapKit.framework */; };
+		3FAB6DE820450A7300681A54 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DE720450A7300681A54 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		220FBED520427B3300A197C5 /* GotEggplant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GotEggplant.entitlements; sourceTree = "<group>"; };
 		220FBED920427B5100A197C5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		220FBEDB20427B5600A197C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3FAB6DE720450A7300681A54 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				220FBEC320427B1900A197C5 /* AppDelegate.swift */,
 				220FBEC520427B1900A197C5 /* ViewController.swift */,
 				220FBEC720427B1900A197C5 /* Main.storyboard */,
+				3FAB6DE720450A7300681A54 /* CameraController.swift */,
 				220FBECA20427B1900A197C5 /* Assets.xcassets */,
 				220FBECC20427B1900A197C5 /* LaunchScreen.storyboard */,
 				220FBECF20427B1900A197C5 /* Info.plist */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAB6DE820450A7300681A54 /* CameraController.swift in Sources */,
 				220FBEC620427B1900A197C5 /* ViewController.swift in Sources */,
 				220FBEC420427B1900A197C5 /* AppDelegate.swift in Sources */,
 			);
