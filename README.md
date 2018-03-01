@@ -3,9 +3,9 @@ Got Eggplant? :eggplant: - Grocery list application
 
 CMPE 137: Swift Programming for Mobile Devices
 
-[comment]: <> (This is a comment)
-[//]: <> (This is a comment)
-[//]: # (This is a comment)
+[comment]: <> (This is a comment)  
+[//]: <> (This is a comment)  
+[//]: # (This is a comment)  
 
 Project members:  
 Thinh Le,  
