@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     let database = CKContainer.default().privateCloudDatabase
+    let cameraController = CameraController()
     
     var counter: Int = 0
     
@@ -74,6 +75,20 @@ class ViewController: UIViewController {
     
     @IBAction func button(_ sender: UIButton) {
         label.text = "Testing UIkit"
+    }
+    
+    @IBAction func accessCamera(_ sender: UIButton) {
+        configureCameraController()
+    }
+    
+    
+    func configureCameraController() {
+        cameraController.prepare {(error) in
+            if let error = error {
+                print(error)
+            }
+        }
+        try? self.cameraController.displayPreview(on: self.view)
     }
 }
 
