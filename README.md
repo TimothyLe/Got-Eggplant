@@ -1,23 +1,28 @@
-# Got Eggplant
-Got Eggplant? :eggplant: - Grocery list application
+# Got Eggplant  
+Got Eggplant? :eggplant: - Grocery list application  
 
-CMPE 137: Swift Programming for Mobile Devices
+## CMPE 137: Swift Programming for Mobile Devices  
 
+<!---
 [comment]: <> (This is a comment)  
 [//]: <> (This is a comment)  
-[//]: # (This is a comment) 
+[//]: # (This is a comment) -->
 <!---
 Comment 
 -->
 
-Project members:  
-Thinh Le,  
-Cherie Sew,  
-David Tran,   
-Timothy Wu, #008867170, msgtimwu@gmail.com
+### Project members:  
+Thinh Le, timothyle85@gmail.com   
+<!--- SID -->
+Cherie Sew, [mailto:]  
+<!--- SID -->
+David Tran, [mailto:]   
+<!--- SID -->
+Timothy Wu, msgtimwu@gmail.com  
+<!---#008867170-->
 
-Process to build app:
+### Process to build app:  
+<!--- Process -->
 
-
-Approach of code:
-
+### Approach of code:  
+<!--- Approach -->
