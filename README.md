@@ -2,8 +2,8 @@
   <strong>Got Eggplant?</strong>
 </h1>
 
-<div align="center" width=250 height=250>
-    <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Eggplant_Emoji_large.png?v=1480481031" alt="Eggplant Logo" />
+<div align="center">
+    <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Eggplant_Emoji_large.png?v=1480481031" alt="Eggplant Logo"  width="250" height="250"/>
 </div>
 
 <p align="center"><i>An optimized grocery shopping list to reduce the busyness in your life</i>  </p>
