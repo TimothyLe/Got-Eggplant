@@ -5,7 +5,10 @@ CMPE 137: Swift Programming for Mobile Devices
 
 [comment]: <> (This is a comment)  
 [//]: <> (This is a comment)  
-[//]: # (This is a comment)  
+[//]: # (This is a comment) 
+<!---
+Comment 
+-->
 
 Project members:  
 Thinh Le,  
