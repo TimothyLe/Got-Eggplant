@@ -14,8 +14,8 @@ Comment
 ### Project members:  
 Thinh Le, timothyle85@gmail.com   
 <!--- SID -->
-Cherie Sew, [mailto:]  
-<!--- SID -->
+Cherie Sew, cheriemeiyee@gmail.com
+<!--- #010108800 -->
 David Tran, [mailto:]   
 <!--- SID -->
 Timothy Wu, msgtimwu@gmail.com  
