@@ -1,5 +1,13 @@
-# Got Eggplant
-Got Eggplant? - Grocery list application
+<h1 align="center">
+  <strong>Got Eggplant?</strong>
+</h1>
+
+<div align="center">
+    <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Eggplant_Emoji_large.png?v=1480481031" alt="Eggplant Logo" />
+</div>
+
+<p align="center"><i>An optimized grocery shopping list to reduce the busyness in your life</i>  </p>
+<br />  
 
 ## CMPE 137: Swift Programming for Mobile Devices
 
