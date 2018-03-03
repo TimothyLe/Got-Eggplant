@@ -1,4 +1,4 @@
-Got Eggplant? - Grocery list application
+Got Eggplant - Grocery list application
 
 CMPE 137: Swift Programming for Mobile Devices
 
