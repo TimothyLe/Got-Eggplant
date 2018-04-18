@@ -49,7 +49,102 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Placeholder for username
+        usernameText.text = "Username"
+        usernameText.textColor = UIColor.lightGray
+        usernameText.textAlignment = NSTextAlignment.center
+        // Placeholder shows up whenever text field is empty, even when the keyboard shows up
+        usernameText.becomeFirstResponder()
+        usernameText.selectedTextRange = usernameText.textRange(from: usernameText.beginningOfDocument, to: usernameText.beginningOfDocument)
+        // Function handler for user entry
+        func usernameTextEditing(_ usernameText: UITextView, shouldChangeTextIn range: NSRange, newText text: String) -> Bool {
+            // Combine username text and new text to create updated string
+            let currentText:String = usernameText.text
+            let updateText = (currentText as NSString).replacingCharacters(in: range, with: text)
+            // Updated text is empty, so add placeholder and set cursor to front of string
+            if updateText.isEmpty {
+                // Placeholder for username
+                usernameText.text = "Username"
+                usernameText.textColor = UIColor.lightGray
+                usernameText.textAlignment = NSTextAlignment.center
+                // Endpoint of string
+                usernameText.selectedTextRange = usernameText.textRange(from: usernameText.beginningOfDocument, to: usernameText.beginningOfDocument)
+                // Done editing
+                return false
+            }
+                // Placeholder text is showing and new string is > 0 then change text to black and prepare for user entry
+            else if usernameText.textColor == UIColor.lightGray && !text.isEmpty{
+                usernameText.text = nil
+                usernameText.textColor = UIColor.black
+                usernameText.textAlignment = NSTextAlignment.center
+            }
+            return true
+        }
 
+        // Placeholder for email
+        emailText.text = "Email"
+        emailText.textColor = UIColor.lightGray
+        emailText.textAlignment = NSTextAlignment.center
+        // Placeholder shows up whenever text field is empty, even when the keyboard shows up
+        emailText.becomeFirstResponder()
+        emailText.selectedTextRange = emailText.textRange(from: emailText.beginningOfDocument, to: emailText.beginningOfDocument)
+        // Function handler for user entry
+        func emailTextEditing(_ emailText: UITextView, shouldChangeTextIn range: NSRange, newText text: String) -> Bool {
+            // Combine email text and new text to create updated string
+            let currentText:String = emailText.text
+            let updateText = (currentText as NSString).replacingCharacters(in: range, with: text)
+            // Updated text is empty, so add placeholder and set cursor to front of string
+            if updateText.isEmpty {
+                // Placeholder for email
+                emailText.text = "Email"
+                emailText.textColor = UIColor.lightGray
+                emailText.textAlignment = NSTextAlignment.center
+                // Endpoint of string
+                emailText.selectedTextRange = emailText.textRange(from: emailText.beginningOfDocument, to: emailText.beginningOfDocument)
+                // Done editing
+                return false
+            }
+                // Placeholder text is showing and new string is > 0 then change text to black and prepare for user entry
+            else if emailText.textColor == UIColor.lightGray && !text.isEmpty{
+                emailText.text = nil
+                emailText.textColor = UIColor.black
+                emailText.textAlignment = NSTextAlignment.center
+            }
+            return true
+        }
+        
+        // Placeholder for password
+        passwordText.text = "Password"
+        passwordText.textColor = UIColor.lightGray
+        passwordText.textAlignment = NSTextAlignment.center
+        // Placeholder shows up whenever text field is empty, even when the keyboard shows up
+        passwordText.becomeFirstResponder()
+        passwordText.selectedTextRange = passwordText.textRange(from: passwordText.beginningOfDocument, to: passwordText.beginningOfDocument)
+        // Function handler for user entry
+        func passwordTextEditing(_ passwordText: UITextView, shouldChangeTextIn range: NSRange, newText text: String) -> Bool {
+            // Combine password text and new text to create updated string
+            let currentText:String = passwordText.text
+            let updateText = (currentText as NSString).replacingCharacters(in: range, with: text)
+            // Updated text is empty, so add placeholder and set cursor to front of string
+            if updateText.isEmpty {
+                // Placeholder for password
+                passwordText.text = "Password"
+                passwordText.textColor = UIColor.lightGray
+                passwordText.textAlignment = NSTextAlignment.center
+                // Endpoint of string
+                passwordText.selectedTextRange = passwordText.textRange(from: passwordText.beginningOfDocument, to: passwordText.beginningOfDocument)
+                // Done editing
+                return false
+            }
+                // Placeholder text is showing and new string is > 0 then change text to black and prepare for user entry
+            else if passwordText.textColor == UIColor.lightGray && !text.isEmpty{
+                passwordText.text = nil
+                passwordText.textColor = UIColor.black
+                passwordText.textAlignment = NSTextAlignment.center
+            }
+            return true
+        }
+        
         // Do any additional setup after loading the view.
     }
 
