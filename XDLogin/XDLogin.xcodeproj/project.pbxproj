@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F03C3DF2086E3C600B94616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F03C3DE2086E3C600B94616 /* GoogleService-Info.plist */; };
 		3F51B49F2085720200C96456 /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 		3F51B4A02085720200C96456 /* Pods_XDLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A62086CDC20044D49B /* LoginViewController.swift */; };
@@ -18,7 +19,6 @@
 		3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA6632085540C00014B74 /* XDLogin.xcdatamodeld */; };
 		3F9FA6672085540C00014B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6662085540C00014B74 /* Assets.xcassets */; };
 		3F9FA66A2085540C00014B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6682085540C00014B74 /* LaunchScreen.storyboard */; };
-		3F9FA674208561D300014B74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA673208561D300014B74 /* GoogleService-Info.plist */; };
 		AB6EF209D0C965A8D93E4C5B /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		13235E197526AA9DEE638A28 /* Pods-XDLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.release.xcconfig"; sourceTree = "<group>"; };
 		13BC210F178099210C228A4A /* Pods_XDLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F03C3DE2086E3C600B94616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F6883A62086CDC20044D49B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F6883A82086CE960044D49B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3F6883AA2086D5740044D49B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		3F9FA6692085540C00014B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9FA66B2085540C00014B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9FA672208560CE00014B74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		3F9FA673208561D300014B74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FBD59932086B88100AB57B6 /* XDLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XDLogin.entitlements; sourceTree = "<group>"; };
 		939BD03F2107187EA66C5C8E /* Pods-XDLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +97,8 @@
 				3F9FA6662085540C00014B74 /* Assets.xcassets */,
 				3F9FA6682085540C00014B74 /* LaunchScreen.storyboard */,
 				3F9FA66B2085540C00014B74 /* Info.plist */,
+				3F03C3DE2086E3C600B94616 /* GoogleService-Info.plist */,
 				3F9FA6632085540C00014B74 /* XDLogin.xcdatamodeld */,
-				3F9FA673208561D300014B74 /* GoogleService-Info.plist */,
 				3F6883A62086CDC20044D49B /* LoginViewController.swift */,
 				3F6883A82086CE960044D49B /* SignupViewController.swift */,
 				3F6883AA2086D5740044D49B /* DummyViewController.swift */,
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9FA66A2085540C00014B74 /* LaunchScreen.storyboard in Resources */,
-				3F9FA674208561D300014B74 /* GoogleService-Info.plist in Resources */,
+				3F03C3DF2086E3C600B94616 /* GoogleService-Info.plist in Resources */,
 				3F9FA6672085540C00014B74 /* Assets.xcassets in Resources */,
 				3F9FA6622085540C00014B74 /* Main.storyboard in Resources */,
 			);
