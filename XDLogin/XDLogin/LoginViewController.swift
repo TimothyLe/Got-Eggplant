@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  XDLogin
 //
-//  Created by student on 4/17/18.
+//  Created by Team Swifters on 4/17/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
 //
 
@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    
     @IBAction func loginButton(_ sender: Any) {
         if self.emailText.text == "" || self.passwordText.text == "" {
             
@@ -79,7 +80,7 @@ class LoginViewController: UIViewController {
                 // Done editing
                 return false
             }
-            // Placeholder text is showing and new string is > 0 then change text to black and prepare for user entry
+                // Placeholder text is showing and new string is > 0 then change text to black and prepare for user entry
             else if emailText.textColor == UIColor.lightGray && !text.isEmpty{
                 emailText.text = nil
                 emailText.textColor = UIColor.black
@@ -119,24 +120,24 @@ class LoginViewController: UIViewController {
             }
             return true
         }
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
