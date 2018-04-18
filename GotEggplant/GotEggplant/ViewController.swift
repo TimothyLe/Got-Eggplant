@@ -24,11 +24,9 @@ import UIKit
 //}
 
 import CloudKit
-<<<<<<< HEAD
 
 class ViewController: UIViewController {
     
-=======
 import UIKit
 import MapKit
 
@@ -93,7 +91,6 @@ class ViewController: UIViewController {
     }
     
     // Camera Controller
->>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
     @IBOutlet weak var label: UILabel!
     
     let database = CKContainer.default().privateCloudDatabase
@@ -103,14 +100,11 @@ class ViewController: UIViewController {
     
     var notes = [CKRecord]()
     
-<<<<<<< HEAD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-=======
->>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
     @IBAction func addToDatabase(){
         counter += 1
         let record = CKRecord(recordType: "Note")
@@ -162,8 +156,6 @@ class ViewController: UIViewController {
     }
 }
 
-<<<<<<< HEAD
-=======
 extension ViewController: MKMapViewDelegate
     // Called for every annotation added to the map to return the view for each annotation
 {
@@ -199,4 +191,3 @@ extension ViewController: MKMapViewDelegate
         return view
     }
 }
->>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
