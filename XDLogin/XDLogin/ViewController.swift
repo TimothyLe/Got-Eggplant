@@ -8,9 +8,6 @@
 
 import UIKit
 import Firebase
-import FirebaseAuthUI
-import FirebaseGoogleAuthUI
-import FirebaseFacebookAuthUI
 
 class ViewController: UIViewController {
 
@@ -24,8 +21,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var LoginButton: UIButton!
-    @IBOutlet weak var SignUpButton: UIButton!
+    @IBAction func LoginButton(_ sender: Any) {
+        performSegue(withIdentifier: "LoginSegue", sender:  self)
+    }
+    
+    @IBAction func SignupButton(_ sender: Any) {
+                performSegue(withIdentifier: "SignupSegue", sender: self)
+    }
     
 }
 
