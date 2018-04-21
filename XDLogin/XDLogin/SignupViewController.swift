@@ -16,6 +16,11 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
+    //Cherie: Please fix segue
+    @IBAction func BackToHome(_ sender: UIButton) {
+        performSegue(withIdentifier: "homeScreen", sender: self)
+    }
+    
     @IBAction func Signup(_ sender: Any) {
         if emailText.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)

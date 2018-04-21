@@ -16,7 +16,7 @@ class DummyViewController: UIViewController {
         if Auth.auth().currentUser != nil {
             do {
                 try Auth.auth().signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginScreen")
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeScreen")
                 present(vc, animated: true, completion: nil)
                 
             } catch let error as NSError {
