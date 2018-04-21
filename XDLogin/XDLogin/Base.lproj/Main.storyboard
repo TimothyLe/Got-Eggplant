@@ -42,14 +42,14 @@
                                 <rect key="frame" x="105" y="388" width="165" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgz-ei-BIm"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgz-ei-BIm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wos-JE-S1T">
                                 <rect key="frame" x="105" y="453" width="165" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="SignupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rep-XJ-9BQ"/>
+                                    <action selector="signupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rep-XJ-9BQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,8 +58,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="gDh-q5-8ja"/>
                     <connections>
-                        <segue destination="oF3-Xq-ugv" kind="show" identifier="SignupSegue" id="tbw-Gi-m7p"/>
-                        <segue destination="ARl-bu-g8b" kind="show" identifier="LoginSegue" id="iwi-Iq-9C6"/>
+                        <segue destination="oF3-Xq-ugv" kind="show" identifier="HomeToSignupSegue" id="tbw-Gi-m7p"/>
+                        <segue destination="ARl-bu-g8b" kind="show" identifier="HomeToLoginSegue" id="iwi-Iq-9C6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,7 +107,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Home"/>
                                 <connections>
-                                    <action selector="BackToHome:" destination="ARl-bu-g8b" eventType="touchUpInside" id="Ce2-Wy-bdM"/>
+                                    <action selector="backToHomeButton:" destination="ARl-bu-g8b" eventType="touchUpInside" id="Ce2-Wy-bdM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,12 +117,13 @@
                     <connections>
                         <outlet property="emailText" destination="xm3-hm-mEM" id="TuS-Z6-x7E"/>
                         <outlet property="passwordText" destination="OSX-VP-EXN" id="hYU-ry-ZL9"/>
-                        <segue destination="bBF-eQ-9Up" kind="show" id="YeO-X6-GEg"/>
+                        <segue destination="bBF-eQ-9Up" kind="show" identifier="LoginToDummySegue" id="YeO-X6-GEg"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginToHomeSegue" id="12O-Jk-yez"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9C-FU-DdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="-316"/>
+            <point key="canvasLocation" x="1356" y="-882"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="YFB-FB-ya7">
@@ -140,7 +141,7 @@
                                 <rect key="frame" x="96" y="341" width="183" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="Signup:" destination="oF3-Xq-ugv" eventType="touchUpInside" id="IJW-3C-yEr"/>
+                                    <action selector="signupButton:" destination="oF3-Xq-ugv" eventType="touchUpInside" id="IJW-3C-yEr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-Hi-9AU">
@@ -172,7 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Home"/>
                                 <connections>
-                                    <action selector="BackToHome:" destination="oF3-Xq-ugv" eventType="touchUpInside" id="3z6-ai-eWb"/>
+                                    <action selector="backToHomeButton:" destination="oF3-Xq-ugv" eventType="touchUpInside" id="3z6-ai-eWb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,12 +184,13 @@
                         <outlet property="emailText" destination="mPt-3N-w05" id="vqW-pL-t6y"/>
                         <outlet property="passwordText" destination="ytZ-MC-erD" id="xx2-0M-6dD"/>
                         <outlet property="usernameText" destination="SgT-Hi-9AU" id="Iv5-dz-iqI"/>
-                        <segue destination="bBF-eQ-9Up" kind="show" identifier="DummySegue" id="YZB-sp-KRP"/>
+                        <segue destination="bBF-eQ-9Up" kind="show" identifier="SignupToDummySegue" id="YZB-sp-KRP"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="SignupToHomeSegue" id="DNC-ri-dQX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0w-y4-DmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="576.1619190404798"/>
+            <point key="canvasLocation" x="1356" y="1057"/>
         </scene>
         <!--Dummy View Controller-->
         <scene sceneID="UsT-ZJ-H0s">
@@ -223,7 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="P86-1J-R3J"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="RSc-Cc-Ui7"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="DummyToHomeSegue" id="RSc-Cc-Ui7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tj-uh-l34" userLabel="First Responder" sceneMemberID="firstResponder"/>

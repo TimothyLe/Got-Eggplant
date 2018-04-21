@@ -22,13 +22,13 @@ class ViewController: UIViewController {
     }
     
     //Login Button
-    @IBAction func LoginButton(_ sender: Any) {
-        performSegue(withIdentifier: "LoginSegue", sender: self)
+    @IBAction func loginButton(_ sender: Any) {
+        performSegue(withIdentifier: "HomeToLoginSegue", sender: self)
     }
     
     //Sign up Button
-    @IBAction func SignupButton(_ sender: Any) {
-        performSegue(withIdentifier: "SignupSegue", sender: self)
+    @IBAction func signupButton(_ sender: Any) {
+        performSegue(withIdentifier: "HomeToSignupSegue", sender: self)
     }
     
 }
