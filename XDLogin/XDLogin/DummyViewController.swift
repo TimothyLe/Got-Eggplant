@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialAppBar
+
 import Firebase
 import FirebaseAuth
 
+
 class DummyViewController: UIViewController {
+    
+    let appBar = MDCAppBar()
     
     @IBAction func logoutButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
@@ -28,6 +33,12 @@ class DummyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addChildViewController(appBar.headerViewController)
+        appBar.headerViewController.headerView.backgroundColor = UIColor(red:0.40, green:0.23, blue:0.72, alpha:1.0)
+        appBar.navigationBar.tintColor = UIColor.black
+        appBar.addSubviewsToParent()
+        
+        title = "Material Components"
         // Do any additional setup after loading the view.
     }
     
