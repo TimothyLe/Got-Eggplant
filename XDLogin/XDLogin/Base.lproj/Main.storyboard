@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ycs-yb-qse">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ycs-yb-qse">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +16,7 @@
             <objects>
                 <navigationController id="Ycs-yb-qse" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gKH-W7-bae">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,7 +32,7 @@
             <objects>
                 <viewController storyboardIdentifier="homeScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Splash page" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-7o-MQP">
@@ -71,7 +72,7 @@
             <objects>
                 <viewController storyboardIdentifier="loginScreen" id="ARl-bu-g8b" customClass="LoginViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X2A-Wg-iYV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Login Page" translatesAutoresizingMaskIntoConstraints="NO" id="eqe-sf-cwA">
@@ -124,12 +125,73 @@
             </objects>
             <point key="canvasLocation" x="1236" y="-316"/>
         </scene>
+        <!--Barcode Scanner Controller-->
+        <scene sceneID="ZtV-pR-llv">
+            <objects>
+                <viewController id="hFb-mV-XVI" customClass="BarcodeScannerController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NBO-Ah-iIp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No barcode is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O27-MU-ri7">
+                                <rect key="frame" x="0.0" y="738" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Z5-P2-Qwo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-VD-d40">
+                                <rect key="frame" x="0.0" y="44" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5L-47-EgF">
+                                        <rect key="frame" x="161" y="36" width="53" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-EO-Az6">
+                                        <rect key="frame" x="8" y="43" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="RBv-NU-m9k"/>
+                                            <constraint firstAttribute="height" constant="24" id="z4u-cn-kVi"/>
+                                        </constraints>
+                                        <state key="normal" image="cross"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.19533962670277777" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tns-EO-Az6" firstAttribute="leading" secondItem="bNi-VD-d40" secondAttribute="leading" constant="8" id="DNI-cD-Acl"/>
+                                    <constraint firstAttribute="height" constant="75" id="EnE-lB-cnO"/>
+                                    <constraint firstItem="A5L-47-EgF" firstAttribute="centerX" secondItem="bNi-VD-d40" secondAttribute="centerX" id="Ybk-DP-WML"/>
+                                    <constraint firstAttribute="bottom" secondItem="tns-EO-Az6" secondAttribute="bottom" constant="8" id="cby-k1-ua7"/>
+                                    <constraint firstItem="A5L-47-EgF" firstAttribute="bottom" secondItem="bNi-VD-d40" secondAttribute="bottomMargin" constant="-2" id="eLp-u2-Mrr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bNi-VD-d40" secondAttribute="trailing" id="5ge-Bp-mOX"/>
+                            <constraint firstItem="bNi-VD-d40" firstAttribute="top" secondItem="MRn-rY-toJ" secondAttribute="top" id="HOe-lc-cHj"/>
+                            <constraint firstItem="bNi-VD-d40" firstAttribute="leading" secondItem="NBO-Ah-iIp" secondAttribute="leading" id="cPm-s8-mzi"/>
+                            <constraint firstItem="O27-MU-ri7" firstAttribute="bottom" secondItem="MRn-rY-toJ" secondAttribute="bottom" id="fww-7G-iW4"/>
+                            <constraint firstItem="O27-MU-ri7" firstAttribute="centerX" secondItem="MRn-rY-toJ" secondAttribute="centerX" id="g8Z-pV-0kV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MRn-rY-toJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUz-7R-T6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="1310.0985221674878"/>
+        </scene>
         <!--Signup View Controller-->
         <scene sceneID="YFB-FB-ya7">
             <objects>
                 <viewController storyboardIdentifier="signupScreen" id="oF3-Xq-ugv" customClass="SignupViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aOY-2e-Ebe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Sign up page" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-Wz-lNG">
@@ -195,7 +257,7 @@
             <objects>
                 <viewController storyboardIdentifier="dummyScreen" id="bBF-eQ-9Up" customClass="DummyViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z3b-ky-y3n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H46-Bq-wPf">
@@ -235,9 +297,10 @@
         <image name="Login Page" width="375" height="667"/>
         <image name="Sign up page" width="375" height="667"/>
         <image name="Splash page" width="375" height="667"/>
+        <image name="cross" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YZB-sp-KRP"/>
+        <segue reference="YeO-X6-GEg"/>
         <segue reference="RSc-Cc-Ui7"/>
     </inferredMetricsTieBreakers>
 </document>
