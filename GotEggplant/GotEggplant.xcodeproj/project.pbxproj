@@ -14,8 +14,15 @@
 		220FBECE20427B1900A197C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FBECC20427B1900A197C5 /* LaunchScreen.storyboard */; };
 		220FBEDA20427B5100A197C5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBED920427B5100A197C5 /* CloudKit.framework */; };
 		220FBEDC20427B5600A197C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBEDB20427B5600A197C5 /* MapKit.framework */; };
+<<<<<<< HEAD
 		3F016794208D399B0048B1DC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F016793208D399B0048B1DC /* MapViewController.swift */; };
+=======
+		3FAB6DE820450A7300681A54 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DE720450A7300681A54 /* CameraController.swift */; };
+<<<<<<< HEAD
+=======
+>>>>>>> 7cb1c6b90f51e8a0de7df41ec1ce78bce6b63002
 		3FEC34412047CDF500C11AA9 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC34402047CDF500C11AA9 /* Artwork.swift */; };
+>>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +36,15 @@
 		220FBED520427B3300A197C5 /* GotEggplant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GotEggplant.entitlements; sourceTree = "<group>"; };
 		220FBED920427B5100A197C5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		220FBEDB20427B5600A197C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
 		3F016793208D399B0048B1DC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+=======
+		3FAB6DE720450A7300681A54 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+>>>>>>> 7cb1c6b90f51e8a0de7df41ec1ce78bce6b63002
 		3FEC34402047CDF500C11AA9 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+>>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +80,10 @@
 		220FBEC220427B1900A197C5 /* GotEggplant */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
 				3FEC34402047CDF500C11AA9 /* Artwork.swift */,
+>>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
 				220FBED520427B3300A197C5 /* GotEggplant.entitlements */,
 				220FBEC320427B1900A197C5 /* AppDelegate.swift */,
 				220FBEC520427B1900A197C5 /* ViewController.swift */,
@@ -172,7 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				220FBEC620427B1900A197C5 /* ViewController.swift in Sources */,
+<<<<<<< HEAD
+=======
 				3FEC34412047CDF500C11AA9 /* Artwork.swift in Sources */,
+>>>>>>> 331cb3c598bc49cb305f923280a6e0fd395ce944
 				220FBEC420427B1900A197C5 /* AppDelegate.swift in Sources */,
 				3F016794208D399B0048B1DC /* MapViewController.swift in Sources */,
 			);
