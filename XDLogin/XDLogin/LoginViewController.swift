@@ -15,6 +15,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
+    @IBAction func backToHomeButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "LoginToHomeSegue", sender: self)
+    }
+    
     @IBAction func loginButton(_ sender: Any) {
         if self.emailText.text == "" || self.passwordText.text == "" {
             
