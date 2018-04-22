@@ -24,6 +24,9 @@ import UIKit
 //}
 
 import CloudKit
+
+class ViewController: UIViewController {
+    
 import UIKit
 import MapKit
 
@@ -96,6 +99,11 @@ class ViewController: UIViewController {
     var counter: Int = 0
     
     var notes = [CKRecord]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
     
     @IBAction func addToDatabase(){
         counter += 1

@@ -42,4 +42,3 @@ For CloudKit, we used the code provided on canvas to test out if we have access.
 For MapKit, the application tracks the user's location on request through User Location Authorization. Based on that, the user's default location (or current location) should have directions to the 'Black Power Statue' landmark on the SJSU campus as a test. The statue feature a location indicator and bubble text when pressed on to display information about the landmark through the file 'Artwork.swift'.
 
 For the camera, a separate class was created for access. This is so further into development, we can configure the use of the camera based on what is required by our app, which in this case only the back camera is used for scanning barcodes.
-
