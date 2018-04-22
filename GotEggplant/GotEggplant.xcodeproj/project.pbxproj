@@ -14,7 +14,7 @@
 		220FBECE20427B1900A197C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220FBECC20427B1900A197C5 /* LaunchScreen.storyboard */; };
 		220FBEDA20427B5100A197C5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBED920427B5100A197C5 /* CloudKit.framework */; };
 		220FBEDC20427B5600A197C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220FBEDB20427B5600A197C5 /* MapKit.framework */; };
-		3FAB6DE820450A7300681A54 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB6DE720450A7300681A54 /* CameraController.swift */; };
+		3F016794208D399B0048B1DC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F016793208D399B0048B1DC /* MapViewController.swift */; };
 		3FEC34412047CDF500C11AA9 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC34402047CDF500C11AA9 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		220FBED520427B3300A197C5 /* GotEggplant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GotEggplant.entitlements; sourceTree = "<group>"; };
 		220FBED920427B5100A197C5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		220FBEDB20427B5600A197C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		3FAB6DE720450A7300681A54 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		3F016793208D399B0048B1DC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3FEC34402047CDF500C11AA9 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +70,8 @@
 				220FBED520427B3300A197C5 /* GotEggplant.entitlements */,
 				220FBEC320427B1900A197C5 /* AppDelegate.swift */,
 				220FBEC520427B1900A197C5 /* ViewController.swift */,
+				3F016793208D399B0048B1DC /* MapViewController.swift */,
 				220FBEC720427B1900A197C5 /* Main.storyboard */,
-				3FAB6DE720450A7300681A54 /* CameraController.swift */,
 				220FBECA20427B1900A197C5 /* Assets.xcassets */,
 				220FBECC20427B1900A197C5 /* LaunchScreen.storyboard */,
 				220FBECF20427B1900A197C5 /* Info.plist */,
@@ -115,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "San Jose State University";
 				TargetAttributes = {
 					220FBEBF20427B1900A197C5 = {
@@ -171,10 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAB6DE820450A7300681A54 /* CameraController.swift in Sources */,
 				220FBEC620427B1900A197C5 /* ViewController.swift in Sources */,
 				3FEC34412047CDF500C11AA9 /* Artwork.swift in Sources */,
 				220FBEC420427B1900A197C5 /* AppDelegate.swift in Sources */,
+				3F016794208D399B0048B1DC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +214,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -221,6 +222,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -271,6 +273,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -278,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -302,6 +306,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController : UIViewController {
+class MapViewController : UIViewController {
     // MapView
     @IBOutlet weak var mapView: MKMapView!
     
@@ -69,7 +69,7 @@ class ViewController : UIViewController {
     }
 }
 
-extension ViewController: MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate
     // Called for every annotation added to the map to return the view for each annotation
 {
     // Method grabs the Artwork obj referenced and launches the Maps app through MKMapItem through openInMaps
@@ -104,3 +104,4 @@ extension ViewController: MKMapViewDelegate
         return view
     }
 }
+
