@@ -15,6 +15,12 @@ PODS:
   - Firebase/Core (4.13.0):
     - FirebaseAnalytics (= 4.2.0)
     - FirebaseCore (= 4.0.20)
+  - Firebase/Database (4.13.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.1.5)
+  - Firebase/Storage (4.13.0):
+    - Firebase/Core
+    - FirebaseStorage (= 2.2.0)
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -26,8 +32,16 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (4.0.20):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (4.1.5):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseUI/Auth (4.5.5):
     - Firebase/Auth (~> 4.2)
   - FirebaseUI/Facebook (4.5.5):
@@ -58,6 +72,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.15)
   - GTMSessionFetcher/Full (1.1.15):
     - GTMSessionFetcher/Core (= 1.1.15)
+  - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -66,6 +81,8 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Storage
   - FirebaseUI/Auth
   - FirebaseUI/Facebook
   - FirebaseUI/Google
@@ -79,12 +96,15 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - FirebaseUI
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - leveldb-library
     - nanopb
 
 SPEC CHECKSUMS:
@@ -95,14 +115,17 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
+  FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseStorage: 0c223481c8f89ed300cf1239ddd2d9833622c65f
   FirebaseUI: 7f149d40db1a67c459df16540256b66d8f8e8c70
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 66e25e5750f26668eb7ad119a14ffe7d76878405
+PODFILE CHECKSUM: 5c0f68149ebc3f99b137cf498a416d323819f817
 
 COCOAPODS: 1.5.0

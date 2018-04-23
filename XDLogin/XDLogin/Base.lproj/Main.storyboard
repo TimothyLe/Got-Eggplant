@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="1356" y="1057"/>
         </scene>
-        <!--Grocery List View Controller-->
+        <!--Grocery List Table View Controller-->
         <scene sceneID="c59-Dc-HPe">
             <objects>
-                <tableViewController storyboardIdentifier="groceryListScreen" title="Grocery List View Controller" id="paD-BL-jvo" customClass="GroceryListTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="groceryListScreen" title="Grocery List Table View Controller" id="paD-BL-jvo" customClass="GroceryListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="SP9-rh-vYb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

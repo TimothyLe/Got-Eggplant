@@ -8,6 +8,8 @@ target 'XDLogin' do
   # Pods for XDLogin
 	pod 'Firebase/Core'
     pod 'FirebaseUI/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Database'
     
     pod 'FirebaseUI/Google'
     pod 'FirebaseUI/Facebook'
