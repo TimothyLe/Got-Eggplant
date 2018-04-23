@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  XDLogin
 //
 //  Created by Team Swifters on 4/16/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.

@@ -1,6 +1,5 @@
 //
 //  LoginViewController.swift
-//  XDLogin
 //
 //  Created by Team Swifters on 4/17/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
@@ -41,7 +40,7 @@ class LoginViewController: UIViewController {
                     print("You have successfully logged in")
                     
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "dummyScreen")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "groceryListScreen")
                     self.present(vc!, animated: true, completion: nil)
                     
                 } else {
