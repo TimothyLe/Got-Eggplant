@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XDLogin/SignupViewController.swift"
-            timestampString = "546142603.453617"
+            timestampString = "546252416.981616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "signupButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

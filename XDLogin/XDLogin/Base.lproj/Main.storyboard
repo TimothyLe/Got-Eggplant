@@ -189,6 +189,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="d9Y-kG-KYH">
+                            <rect key="frame" x="0.0" y="82" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem systemItem="add" id="aRp-0t-Wda">
+                                    <connections>
+                                        <action selector="addButtonDidTouch:" destination="paD-BL-jvo" id="pW8-lc-Alo"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="a16-5K-s9l" detailTextLabel="PJ9-Mg-zvD" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="ozR-vO-jdT">
                                 <rect key="frame" x="0.0" y="22" width="375" height="60"/>
@@ -220,6 +231,7 @@
                             <outlet property="delegate" destination="paD-BL-jvo" id="rLv-uf-Vk3"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Grocery List" id="Pay-a7-9AD">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2d2-Dh-QyI">
                             <connections>
@@ -227,6 +239,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="GroceryToHomeSegue" id="QyY-AR-JIH"/>
                     </connections>

@@ -7,10 +7,12 @@
 
 import UIKit
 import Firebase
+import FirebaseCore
 import FirebaseAuth
+import FirebaseDatabase
 
 class GroceryListTableViewController: UITableViewController {
-
+    
     let ref = Database.database().reference(withPath: "grocery-items")
 
     @IBAction func logoutButton(_ sender: Any) {
@@ -78,6 +80,18 @@ class GroceryListTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = userCountBarButtonItem
         
         user = User(uid: "FakeId", email: "hungry@person.food")
+        
+        ref.queryOrdered(byChild: "completed").observe(.value, with: { snapshot in
+            var newItems: [GroceryItem] = []
+            
+            for item in snapshot.children {
+                let groceryItem = GroceryItem(snapshot: item as! DataSnapshot)
+                newItems.append(groceryItem)
+            }
+            
+            self.items = newItems
+            self.tableView.reloadData()
+        })
     }
     
     // MARK: UITableView Delegate methods
@@ -104,19 +118,24 @@ class GroceryListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            items.remove(at: indexPath.row)
-            tableView.reloadData()
+            let groceryItem = items[indexPath.row]
+            groceryItem.ref?.removeValue()
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
-        var groceryItem = items[indexPath.row]
-        let toggledCompletion = !groceryItem.completed
-        
-        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
-        groceryItem.completed = toggledCompletion
-        tableView.reloadData()
+    // 1
+    guard let cell = tableView.cellForRow(at: indexPath) else { return }
+    // 2
+    let groceryItem = items[indexPath.row]
+    // 3
+    let toggledCompletion = !groceryItem.completed
+    // 4
+    toggleCellCheckbox(cell, isCompleted: toggledCompletion)
+    // 5
+    groceryItem.ref?.updateChildValues([
+    "completed": toggledCompletion
+    ])
     }
     
     func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
@@ -138,14 +157,31 @@ class GroceryListTableViewController: UITableViewController {
                                       message: "Add an Item",
                                       preferredStyle: .alert)
         
+//        let saveAction = UIAlertAction(title: "Save",
+//                                       style: .default) { action in
+//                                        let textField = alert.textFields![0]
+//                                        let groceryItem = GroceryItem(name: textField.text!,
+//                                                                      addedByUser: self.user.email!,
+//                                                                      completed: false)
+//                                        self.items.append(groceryItem)
+//                                        self.tableView.reloadData()
+//        }
+        
         let saveAction = UIAlertAction(title: "Save",
-                                       style: .default) { action in
-                                        let textField = alert.textFields![0]
-                                        let groceryItem = GroceryItem(name: textField.text!,
+                                       style: .default) { _ in
+                                        // 1
+                                        guard let textField = alert.textFields?.first,
+                                            let text = textField.text else { return }
+                                        
+                                        // 2
+                                        let groceryItem = GroceryItem(name: text,
                                                                       addedByUser: self.user.email,
                                                                       completed: false)
-                                        self.items.append(groceryItem)
-                                        self.tableView.reloadData()
+                                        // 3
+                                        let groceryItemRef = self.ref.child(text.lowercased())
+                                        
+                                        // 4
+                                        groceryItemRef.setValue(groceryItem.toAnyObject())
         }
         
         let cancelAction = UIAlertAction(title: "Cancel",

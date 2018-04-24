@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D6E8CE208F160C00D0DB5E /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E8CD208F160C00D0DB5E /* GroceryItem.swift */; };
+		22D6E8D0208F234900D0DB5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E8CF208F234900D0DB5E /* User.swift */; };
 		3F03C3E12086E6AD00B94616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */; };
 		3F51B49F2085720200C96456 /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 		3F51B4A02085720200C96456 /* Pods_XDLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		13235E197526AA9DEE638A28 /* Pods-XDLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.release.xcconfig"; sourceTree = "<group>"; };
 		13BC210F178099210C228A4A /* Pods_XDLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D6E8CD208F160C00D0DB5E /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryItem.swift; path = "../../../../Desktop/Grocr-starter/Grocr/GroceryItem.swift"; sourceTree = "<group>"; };
+		22D6E8CF208F234900D0DB5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../Desktop/Grocr-starter/Grocr/User.swift"; sourceTree = "<group>"; };
 		3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F6883A62086CDC20044D49B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F6883A82086CE960044D49B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				3F6883A62086CDC20044D49B /* LoginViewController.swift */,
 				3F6883A82086CE960044D49B /* SignupViewController.swift */,
 				3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */,
+				22D6E8CD208F160C00D0DB5E /* GroceryItem.swift */,
+				22D6E8CF208F234900D0DB5E /* User.swift */,
 				3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */,
 			);
 			path = XDLogin;
@@ -286,8 +292,10 @@
 				3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */,
 				3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */,
 				3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */,
+				22D6E8D0208F234900D0DB5E /* User.swift in Sources */,
 				3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */,
 				3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */,
+				22D6E8CE208F160C00D0DB5E /* GroceryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
