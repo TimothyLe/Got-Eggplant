@@ -184,7 +184,7 @@
         <!--Grocery List Table View Controller-->
         <scene sceneID="c59-Dc-HPe">
             <objects>
-                <tableViewController storyboardIdentifier="groceryListScreen" title="Grocery List Table View Controller" id="paD-BL-jvo" customClass="GroceryListTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="groceryListScreen" title="Grocery List Table View Controller" id="paD-BL-jvo" customClass="GroceryListTableViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="SP9-rh-vYb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,6 +197,16 @@
                                     <connections>
                                         <action selector="addButtonDidTouch:" destination="paD-BL-jvo" id="pW8-lc-Alo"/>
                                     </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" id="qJu-WW-Cfr" userLabel="Logout">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sRH-C1-PdH">
+                                        <rect key="frame" x="38.5" y="7" width="48" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButton:" destination="paD-BL-jvo" eventType="touchUpInside" id="J42-66-JMi"/>
+                                        </connections>
+                                    </button>
                                 </barButtonItem>
                             </items>
                         </toolbar>
@@ -233,11 +243,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Grocery List" id="Pay-a7-9AD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2d2-Dh-QyI">
-                            <connections>
-                                <action selector="addButtonDidTouch:" destination="paD-BL-jvo" id="eiD-vU-BYz"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2d2-Dh-QyI"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

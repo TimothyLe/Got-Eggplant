@@ -14,7 +14,8 @@ import FirebaseDatabase
 class GroceryListTableViewController: UITableViewController {
     
     let ref = Database.database().reference(withPath: "grocery-items")
-
+    let usersRef = Database.database().reference(withPath: "online")
+    
     @IBAction func logoutButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
             do {
@@ -27,12 +28,6 @@ class GroceryListTableViewController: UITableViewController {
             }
         }
     }
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,12 +44,6 @@ class GroceryListTableViewController: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
-    
-    
-    
-    
-    
     
     
     // MARK: Constants
@@ -92,6 +81,26 @@ class GroceryListTableViewController: UITableViewController {
             self.items = newItems
             self.tableView.reloadData()
         })
+        
+        //        Auth.auth().addStateDidChangeListener { auth, user in
+        //            guard let user = user else { return }
+        //            self.user = User(authData: user)
+        //
+        //            // 1
+        //            let currentUserRef = self.usersRef.child(self.user.uid)
+        //            // 2
+        //            currentUserRef.setValue(self.user.email)
+        //            // 3
+        //            currentUserRef.onDisconnectRemoveValue()
+        //        }
+        
+        usersRef.observe(.value, with: { snapshot in
+            if snapshot.exists() {
+                self.userCountBarButtonItem?.title = snapshot.childrenCount.description
+            } else {
+                self.userCountBarButtonItem?.title = "0"
+            }
+        })
     }
     
     // MARK: UITableView Delegate methods
@@ -124,18 +133,18 @@ class GroceryListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    // 1
-    guard let cell = tableView.cellForRow(at: indexPath) else { return }
-    // 2
-    let groceryItem = items[indexPath.row]
-    // 3
-    let toggledCompletion = !groceryItem.completed
-    // 4
-    toggleCellCheckbox(cell, isCompleted: toggledCompletion)
-    // 5
-    groceryItem.ref?.updateChildValues([
-    "completed": toggledCompletion
-    ])
+        // 1
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        // 2
+        let groceryItem = items[indexPath.row]
+        // 3
+        let toggledCompletion = !groceryItem.completed
+        // 4
+        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
+        // 5
+        groceryItem.ref?.updateChildValues([
+            "completed": toggledCompletion
+            ])
     }
     
     func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
@@ -156,16 +165,6 @@ class GroceryListTableViewController: UITableViewController {
         let alert = UIAlertController(title: "Grocery Item",
                                       message: "Add an Item",
                                       preferredStyle: .alert)
-        
-//        let saveAction = UIAlertAction(title: "Save",
-//                                       style: .default) { action in
-//                                        let textField = alert.textFields![0]
-//                                        let groceryItem = GroceryItem(name: textField.text!,
-//                                                                      addedByUser: self.user.email!,
-//                                                                      completed: false)
-//                                        self.items.append(groceryItem)
-//                                        self.tableView.reloadData()
-//        }
         
         let saveAction = UIAlertAction(title: "Save",
                                        style: .default) { _ in
