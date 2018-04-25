@@ -1,7 +1,7 @@
 //
-//  GroceryListTableViewController.swift
+//  PantryListTableViewController.swift
 //
-//  Created by Team Swifters on 4/17/18.
+//  Created by Team Swifters on 4/24/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseDatabase
 
-class GroceryListTableViewController: UITableViewController {
+class PantryListTableViewController: UITableViewController {
     
     let ref = Database.database().reference(withPath: "grocery-items")
     let usersRef = Database.database().reference(withPath: "online")
@@ -27,10 +27,6 @@ class GroceryListTableViewController: UITableViewController {
                 print(error.localizedDescription)
             }
         }
-    }
-    
-    @IBAction func pantryListButton(_ sender: Any) {
-        performSegue(withIdentifier: "GroceryToPantrySegue", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,17 +82,17 @@ class GroceryListTableViewController: UITableViewController {
             self.tableView.reloadData()
         })
         
-//                Auth.auth().addStateDidChangeListener { auth, user in
-//                    guard let user = user else { return }
-//                    self.user = User(authData: user)
-//        
-//                    // 1
-//                    let currentUserRef = self.usersRef.child(self.user.uid)
-//                    // 2
-//                    currentUserRef.setValue(self.user.email)
-//                    // 3
-//                    currentUserRef.onDisconnectRemoveValue()
-//                }
+//        Auth.auth().addStateDidChangeListener { auth, user in
+//            guard let user = user else { return }
+//            self.user = User(authData: user)
+//            
+//            // 1
+//            let currentUserRef = self.usersRef.child(self.user.uid)
+//            // 2
+//            currentUserRef.setValue(self.user.email)
+//            // 3
+//            currentUserRef.onDisconnectRemoveValue()
+//        }
         
         usersRef.observe(.value, with: { snapshot in
             if snapshot.exists() {
@@ -203,3 +199,4 @@ class GroceryListTableViewController: UITableViewController {
     }
     
 }
+

@@ -208,6 +208,16 @@
                                         </connections>
                                     </button>
                                 </barButtonItem>
+                                <barButtonItem style="plain" id="dF9-OX-p8E">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oHf-93-X2H">
+                                        <rect key="frame" x="86.5" y="7" width="73" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Pantry List"/>
+                                        <connections>
+                                            <action selector="pantryListButton:" destination="paD-BL-jvo" eventType="touchUpInside" id="Qc7-HO-ia8"/>
+                                        </connections>
+                                    </button>
+                                </barButtonItem>
                             </items>
                         </toolbar>
                         <prototypes>
@@ -248,11 +258,61 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="GroceryToHomeSegue" id="QyY-AR-JIH"/>
+                        <segue destination="BpU-0i-5Os" kind="presentation" identifier="GroceryToPantrySegue" id="cYn-a4-zcV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIG-Bd-b1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2511" y="95"/>
+        </scene>
+        <!--Pantry List Table View Controller-->
+        <scene sceneID="l7p-fm-pAn">
+            <objects>
+                <tableViewController storyboardIdentifier="pantryListScreen" title="Pantry List Table View Controller" id="BpU-0i-5Os" customClass="PantryListTableViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="S6a-mH-c0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="BcU-gU-Y50" detailTextLabel="XqA-6Z-n9Y" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="78V-mf-oyc">
+                                <rect key="frame" x="0.0" y="22" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="78V-mf-oyc" id="V1K-rG-lS6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BcU-gU-Y50">
+                                            <rect key="frame" x="16" y="7" width="35" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XqA-6Z-n9Y">
+                                            <rect key="frame" x="16" y="34" width="41.5" height="16.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BpU-0i-5Os" id="qMz-G4-kad"/>
+                            <outlet property="delegate" destination="BpU-0i-5Os" id="KSO-wT-K3q"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Pantry List" id="fiA-1Q-Q2I">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bqj-fQ-311"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzO-5G-Zd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3745" y="95"/>
         </scene>
     </scenes>
     <resources>
@@ -261,7 +321,7 @@
         <image name="Splash page" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uw3-3n-lHk"/>
+        <segue reference="cil-Qb-i8A"/>
         <segue reference="QyY-AR-JIH"/>
     </inferredMetricsTieBreakers>
 </document>
