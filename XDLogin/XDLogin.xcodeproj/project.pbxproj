@@ -16,6 +16,7 @@
 		3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A62086CDC20044D49B /* LoginViewController.swift */; };
 		3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A82086CE960044D49B /* SignupViewController.swift */; };
 		3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */; };
+		3F725CFC20952A6700311428 /* BarcodeScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F725CFB20952A6700311428 /* BarcodeScannerController.swift */; };
 		3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65C2085540B00014B74 /* AppDelegate.swift */; };
 		3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65E2085540C00014B74 /* ViewController.swift */; };
 		3F9FA6622085540C00014B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6602085540C00014B74 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		3F6883A62086CDC20044D49B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F6883A82086CE960044D49B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		3F725CFB20952A6700311428 /* BarcodeScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeScannerController.swift; path = ../../GotEggplant/GotEggplant/BarcodeScannerController.swift; sourceTree = "<group>"; };
 		3F9FA6592085540B00014B74 /* XDLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9FA65C2085540B00014B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9FA65E2085540C00014B74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3F9FA65E2085540C00014B74 /* ViewController.swift */,
 				3F6883A62086CDC20044D49B /* LoginViewController.swift */,
 				3F6883A82086CE960044D49B /* SignupViewController.swift */,
+				3F725CFB20952A6700311428 /* BarcodeScannerController.swift */,
 				3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */,
 				22D6E8D1209040FF00D0DB5E /* PantryListTableViewController.swift */,
 				22D5F03120948F6300E597FE /* GroceryItem.swift */,
@@ -298,6 +301,7 @@
 				3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */,
 				3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */,
 				3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */,
+				3F725CFC20952A6700311428 /* BarcodeScannerController.swift in Sources */,
 				22D5F03220948F6300E597FE /* GroceryItem.swift in Sources */,
 				22D5F03420948F6F00E597FE /* User.swift in Sources */,
 			);

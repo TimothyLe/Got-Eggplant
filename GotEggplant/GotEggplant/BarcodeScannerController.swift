@@ -11,8 +11,9 @@ import AVFoundation
 
 class BarcodeScannerController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    @IBOutlet var messageLabel : UILabel!
-    @IBOutlet var topBar : UIView!
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var topBar: UIView!
     
     var captureSession : AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?

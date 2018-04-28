@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -314,11 +309,85 @@
             </objects>
             <point key="canvasLocation" x="3745" y="95"/>
         </scene>
+        <!--Scanner Controller-->
+        <scene sceneID="Q4s-zB-AaY">
+            <objects>
+                <viewController id="lpy-wU-mhj" customClass="QRScannerController" customModule="QRCodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2n-xb-xWs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No barcode is detected." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfQ-To-EhX">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WRT-sa-bKX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o4-G5-r6n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUh-xs-g39">
+                                        <rect key="frame" x="165.5" y="38" width="44" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfb-fj-qu1">
+                                        <rect key="frame" x="15" y="39" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="18" id="TRB-Pn-oaq"/>
+                                            <constraint firstAttribute="width" constant="18" id="aE0-n6-H1E"/>
+                                            <constraint firstAttribute="height" constant="18" id="s8j-9l-byc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="cross"/>
+                                        <connections>
+                                            <segue destination="IbO-ck-Ow5" kind="unwind" unwindAction="unwindToHomeScreenWithSegue:" id="uoS-Ue-XJf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JUh-xs-g39" secondAttribute="bottom" constant="8" id="9Jr-Zu-ZjR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rfb-fj-qu1" secondAttribute="bottom" constant="13" id="E2e-OL-WUI"/>
+                                    <constraint firstItem="Rfb-fj-qu1" firstAttribute="leading" secondItem="1o4-G5-r6n" secondAttribute="leading" constant="15" id="XKB-At-Gh5"/>
+                                    <constraint firstAttribute="height" constant="70" id="eju-ZJ-a0i"/>
+                                    <constraint firstItem="JUh-xs-g39" firstAttribute="centerX" secondItem="1o4-G5-r6n" secondAttribute="centerX" id="jTB-Hy-ShI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NfQ-To-EhX" firstAttribute="leading" secondItem="nNq-he-CQi" secondAttribute="leading" id="0ts-YS-Pf0"/>
+                            <constraint firstItem="nNq-he-CQi" firstAttribute="trailing" secondItem="NfQ-To-EhX" secondAttribute="trailing" id="9Hp-x5-uXh"/>
+                            <constraint firstItem="1o4-G5-r6n" firstAttribute="leading" secondItem="H2n-xb-xWs" secondAttribute="leading" id="ScU-wz-VFv"/>
+                            <constraint firstItem="nNq-he-CQi" firstAttribute="bottom" secondItem="NfQ-To-EhX" secondAttribute="bottom" id="edH-ei-gTw"/>
+                            <constraint firstItem="nNq-he-CQi" firstAttribute="trailing" secondItem="1o4-G5-r6n" secondAttribute="trailing" id="hpE-Hw-GwP"/>
+                            <constraint firstItem="1o4-G5-r6n" firstAttribute="top" secondItem="H2n-xb-xWs" secondAttribute="top" id="oCK-Tz-XRw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nNq-he-CQi"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="NfQ-To-EhX" id="ZuU-ho-QP7"/>
+                        <outlet property="topBar" destination="1o4-G5-r6n" id="kFI-ya-oDc"/>
+                        <outlet property="topbar" destination="1o4-G5-r6n" id="QFo-oe-O8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYx-TJ-7n7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IbO-ck-Ow5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="963"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Login Page" width="375" height="667"/>
         <image name="Sign up page" width="375" height="667"/>
         <image name="Splash page" width="375" height="667"/>
+        <image name="cross" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cil-Qb-i8A"/>
