@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/tim/Documents/Got-Eggplant/XDLogin/XDLogin/GroceryListTableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:XDLogin.xcodeproj">
    </FileRef>
    <FileRef

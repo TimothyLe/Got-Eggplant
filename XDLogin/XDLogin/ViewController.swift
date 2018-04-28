@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  XDLogin
 //
 //  Created by Team Swifters on 4/16/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
@@ -8,6 +7,9 @@
 
 import UIKit
 import Firebase
+import FirebaseCore
+import FirebaseAuth
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     

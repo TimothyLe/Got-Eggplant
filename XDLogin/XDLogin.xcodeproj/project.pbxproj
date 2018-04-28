@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D5F03220948F6300E597FE /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5F03120948F6300E597FE /* GroceryItem.swift */; };
+		22D5F03420948F6F00E597FE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5F03320948F6F00E597FE /* User.swift */; };
+		22D6E8D2209040FF00D0DB5E /* PantryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6E8D1209040FF00D0DB5E /* PantryListTableViewController.swift */; };
 		3F03C3E12086E6AD00B94616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */; };
 		3F51B49F2085720200C96456 /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 		3F51B4A02085720200C96456 /* Pods_XDLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A62086CDC20044D49B /* LoginViewController.swift */; };
 		3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A82086CE960044D49B /* SignupViewController.swift */; };
-		3F6883AB2086D5740044D49B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883AA2086D5740044D49B /* DummyViewController.swift */; };
+		3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */; };
 		3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65C2085540B00014B74 /* AppDelegate.swift */; };
 		3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65E2085540C00014B74 /* ViewController.swift */; };
 		3F9FA6622085540C00014B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6602085540C00014B74 /* Main.storyboard */; };
@@ -39,10 +42,13 @@
 /* Begin PBXFileReference section */
 		13235E197526AA9DEE638A28 /* Pods-XDLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.release.xcconfig"; sourceTree = "<group>"; };
 		13BC210F178099210C228A4A /* Pods_XDLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D5F03120948F6300E597FE /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		22D5F03320948F6F00E597FE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		22D6E8D1209040FF00D0DB5E /* PantryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryListTableViewController.swift; sourceTree = "<group>"; };
 		3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F6883A62086CDC20044D49B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F6883A82086CE960044D49B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		3F6883AA2086D5740044D49B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
 		3F9FA6592085540B00014B74 /* XDLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9FA65C2085540B00014B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9FA65E2085540C00014B74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +106,10 @@
 				3F9FA65E2085540C00014B74 /* ViewController.swift */,
 				3F6883A62086CDC20044D49B /* LoginViewController.swift */,
 				3F6883A82086CE960044D49B /* SignupViewController.swift */,
-				3F6883AA2086D5740044D49B /* DummyViewController.swift */,
+				3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */,
+				22D6E8D1209040FF00D0DB5E /* PantryListTableViewController.swift */,
+				22D5F03120948F6300E597FE /* GroceryItem.swift */,
+				22D5F03320948F6F00E597FE /* User.swift */,
 				3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */,
 			);
 			path = XDLogin;
@@ -238,6 +247,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -248,6 +258,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */,
-				3F6883AB2086D5740044D49B /* DummyViewController.swift in Sources */,
+				22D6E8D2209040FF00D0DB5E /* PantryListTableViewController.swift in Sources */,
+				3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */,
 				3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */,
 				3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */,
 				3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */,
 				3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */,
+				22D5F03220948F6300E597FE /* GroceryItem.swift in Sources */,
+				22D5F03420948F6F00E597FE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
