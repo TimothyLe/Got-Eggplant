@@ -61,12 +61,12 @@ class PantryListTableViewController: UITableViewController {
         
         tableView.allowsMultipleSelectionDuringEditing = false
         
-        userCountBarButtonItem = UIBarButtonItem(title: "1",
-                                                 style: .plain,
-                                                 target: self,
-                                                 action: #selector(userCountButtonDidTouch))
-        userCountBarButtonItem.tintColor = UIColor.white
-        navigationItem.leftBarButtonItem = userCountBarButtonItem
+//        userCountBarButtonItem = UIBarButtonItem(title: "1",
+//                                                 style: .plain,
+//                                                 target: self,
+//                                                 action: #selector(userCountButtonDidTouch))
+//        userCountBarButtonItem.tintColor = UIColor.white
+//        navigationItem.leftBarButtonItem = userCountBarButtonItem
         
         user = User(uid: "FakeId", email: "hungry@person.food")
         
@@ -75,24 +75,26 @@ class PantryListTableViewController: UITableViewController {
             
             for item in snapshot.children {
                 let groceryItem = GroceryItem(snapshot: item as! DataSnapshot)
-                newItems.append(groceryItem)
+                if (groceryItem.completed == true) {
+                    newItems.append(groceryItem)
+                }
             }
             
             self.items = newItems
             self.tableView.reloadData()
         })
         
-//        Auth.auth().addStateDidChangeListener { auth, user in
-//            guard let user = user else { return }
-//            self.user = User(authData: user)
-//            
-//            // 1
-//            let currentUserRef = self.usersRef.child(self.user.uid)
-//            // 2
-//            currentUserRef.setValue(self.user.email)
-//            // 3
-//            currentUserRef.onDisconnectRemoveValue()
-//        }
+        Auth.auth().addStateDidChangeListener { auth, user in
+            guard let user = user else { return }
+            self.user = User(authData: user)
+            
+            // 1
+            let currentUserRef = self.usersRef.child(self.user.uid)
+            // 2
+            currentUserRef.setValue(self.user.email)
+            // 3
+            currentUserRef.onDisconnectRemoveValue()
+        }
         
         usersRef.observe(.value, with: { snapshot in
             if snapshot.exists() {
@@ -116,7 +118,7 @@ class PantryListTableViewController: UITableViewController {
         cell.textLabel?.text = groceryItem.name
         cell.detailTextLabel?.text = groceryItem.addedByUser
         
-        toggleCellCheckbox(cell, isCompleted: groceryItem.completed)
+//        toggleCellCheckbox(cell, isCompleted: groceryItem.completed)
         
         return cell
     }
@@ -140,24 +142,24 @@ class PantryListTableViewController: UITableViewController {
         // 3
         let toggledCompletion = !groceryItem.completed
         // 4
-        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
+//        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
         // 5
         groceryItem.ref?.updateChildValues([
             "completed": toggledCompletion
             ])
     }
     
-    func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
-        if !isCompleted {
-            cell.accessoryType = .none
-            cell.textLabel?.textColor = UIColor.black
-            cell.detailTextLabel?.textColor = UIColor.black
-        } else {
-            cell.accessoryType = .checkmark
-            cell.textLabel?.textColor = UIColor.gray
-            cell.detailTextLabel?.textColor = UIColor.gray
-        }
-    }
+//    func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
+//        if !isCompleted {
+//            cell.accessoryType = .none
+//            cell.textLabel?.textColor = UIColor.black
+//            cell.detailTextLabel?.textColor = UIColor.black
+//        } else {
+//            cell.accessoryType = .checkmark
+//            cell.textLabel?.textColor = UIColor.gray
+//            cell.detailTextLabel?.textColor = UIColor.gray
+//        }
+//    }
     
     // MARK: Add Item
     
