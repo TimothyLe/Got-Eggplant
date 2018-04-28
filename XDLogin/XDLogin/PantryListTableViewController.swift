@@ -84,17 +84,17 @@ class PantryListTableViewController: UITableViewController {
             self.tableView.reloadData()
         })
         
-        Auth.auth().addStateDidChangeListener { auth, user in
-            guard let user = user else { return }
-            self.user = User(authData: user)
-            
-            // 1
-            let currentUserRef = self.usersRef.child(self.user.uid)
-            // 2
-            currentUserRef.setValue(self.user.email)
-            // 3
-            currentUserRef.onDisconnectRemoveValue()
-        }
+//        Auth.auth().addStateDidChangeListener { auth, user in
+//            guard let user = user else { return }
+//            self.user = User(authData: user)
+//
+//            // 1
+//            let currentUserRef = self.usersRef.child(self.user.uid)
+//            // 2
+//            currentUserRef.setValue(self.user.email)
+//            // 3
+//            currentUserRef.onDisconnectRemoveValue()
+//        }
         
         usersRef.observe(.value, with: { snapshot in
             if snapshot.exists() {
@@ -134,20 +134,20 @@ class PantryListTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 1
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
-        // 2
-        let groceryItem = items[indexPath.row]
-        // 3
-        let toggledCompletion = !groceryItem.completed
-        // 4
-//        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
-        // 5
-        groceryItem.ref?.updateChildValues([
-            "completed": toggledCompletion
-            ])
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // 1
+//        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+//        // 2
+//        let groceryItem = items[indexPath.row]
+//        // 3
+//        let toggledCompletion = !groceryItem.completed
+//        // 4
+////        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
+//        // 5
+//        groceryItem.ref?.updateChildValues([
+//            "completed": toggledCompletion
+//            ])
+//    }
     
 //    func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
 //        if !isCompleted {
