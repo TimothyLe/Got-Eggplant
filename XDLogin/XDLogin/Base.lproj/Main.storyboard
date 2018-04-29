@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Avenir.ttc">
-            <string>Avenir-Book</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -417,6 +412,34 @@
             </objects>
             <point key="canvasLocation" x="3449" y="907"/>
         </scene>
+        <!--MapViewController-->
+        <scene sceneID="XJH-1f-SLd">
+            <objects>
+                <viewController title="MapViewController" id="QSQ-wl-8Wv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBi-Ye-Mxq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HyE-Ft-0dT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.10000000000000001" height="0.10000000000000001"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HyE-Ft-0dT" firstAttribute="leading" secondItem="K3I-Ja-GUg" secondAttribute="leading" id="JoB-ud-eUr"/>
+                            <constraint firstItem="HyE-Ft-0dT" firstAttribute="trailing" secondItem="K3I-Ja-GUg" secondAttribute="trailing" id="gKF-wJ-ItZ"/>
+                            <constraint firstItem="HyE-Ft-0dT" firstAttribute="top" secondItem="YBi-Ye-Mxq" secondAttribute="top" id="pJT-Vt-WzQ"/>
+                            <constraint firstItem="HyE-Ft-0dT" firstAttribute="bottom" secondItem="K3I-Ja-GUg" secondAttribute="bottom" id="tap-0W-uPk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K3I-Ja-GUg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="rg3-hj-Uvc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRJ-j4-Qru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4284" y="909.89505247376314"/>
+        </scene>
         <!--Item-->
         <scene sceneID="ccy-Qj-e5a">
             <objects>
@@ -433,6 +456,7 @@
                         <segue destination="paD-BL-jvo" kind="relationship" relationship="viewControllers" id="0xa-Ec-jWa"/>
                         <segue destination="BpU-0i-5Os" kind="relationship" relationship="viewControllers" id="J5e-Sx-alQ"/>
                         <segue destination="lpy-wU-mhj" kind="relationship" relationship="viewControllers" id="DWB-u4-Dtb"/>
+                        <segue destination="QSQ-wl-8Wv" kind="relationship" relationship="viewControllers" id="TDN-pk-TMb"/>
                         <segue destination="fdC-fh-3nO" kind="relationship" relationship="viewControllers" id="au0-p8-zba"/>
                     </connections>
                 </tabBarController>
@@ -443,6 +467,7 @@
     </scenes>
     <resources>
         <image name="Login Page" width="375" height="667"/>
+        <image name="Map" width="32" height="32"/>
         <image name="Sign up page" width="375" height="667"/>
         <image name="Splash page" width="375" height="667"/>
         <image name="barcode" width="32" height="32"/>
