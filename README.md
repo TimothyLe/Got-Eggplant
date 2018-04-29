@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
   <strong>Got Eggplant? - Grocery list Application</strong>
 </h1>
@@ -42,3 +43,33 @@ For UIKit, it was just a simple line of code: import UIKit. Testing whether it w
 For FirebaseKit, we used the code provided on Get Started manual to test out if we have access. Initially, the connection could not be establish, but the issue was solved after minor tweaks to the database.
 
 For MapKit, the application tracks the user's location on request through User Location Authorization. Based on that, the user's default location (or current location) should have directions to the 'Black Power Statue' landmark on the SJSU campus as a test. The statue feature a location indicator and bubble text when pressed on to display information about the landmark through the file 'Artwork.swift'.
+=======
+# Got Eggplant  
+Got Eggplant? :eggplant: - Grocery list application  
+
+## CMPE 137: Swift Programming for Mobile Devices  
+
+<!---
+[comment]: <> (This is a comment)  
+[//]: <> (This is a comment)  
+[//]: # (This is a comment) -->
+<!---
+Comment 
+-->
+
+### Project members:  
+Thinh Le, timothyle85@gmail.com   
+<!--- SID -->
+Cherie Sew, cheriemeiyee@gmail.com
+<!--- #010108800 -->
+David Tran, [mailto:]   
+<!--- SID -->
+Timothy Wu, msgtimwu@gmail.com  
+<!---#008867170-->
+
+### Process to build app:  
+<!--- Process -->
+
+### Approach of code:  
+<!--- Approach -->
+>>>>>>> b83c1f8605b1f06e695165bc6ab45a3eeac566a3
