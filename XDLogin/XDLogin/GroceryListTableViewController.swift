@@ -11,7 +11,6 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseDatabase
 
-
 class GroceryListTableViewController: UITableViewController {
     
     let ref = Database.database().reference(withPath: "grocery-items")
@@ -29,8 +28,6 @@ class GroceryListTableViewController: UITableViewController {
             }
         }
     }
-    
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,7 +59,6 @@ class GroceryListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.allowsMultipleSelectionDuringEditing = false
-        
         
         user = User(uid: "Google", email: "google@google.com")
         

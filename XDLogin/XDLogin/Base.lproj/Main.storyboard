@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -299,7 +304,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzO-5G-Zd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4684" y="94.902548725637189"/>
+            <point key="canvasLocation" x="4455" y="95"/>
         </scene>
         <!--Scanner Controller-->
         <scene sceneID="Q4s-zB-AaY">
@@ -372,7 +377,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYx-TJ-7n7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IbO-ck-Ow5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="84" y="963"/>
+            <point key="canvasLocation" x="3449" y="907"/>
         </scene>
         <!--Item-->
         <scene sceneID="ccy-Qj-e5a">
@@ -406,7 +411,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BUe-A0-veo"/>
-        <segue reference="cYn-a4-zcV"/>
+        <segue reference="J5e-Sx-alQ"/>
         <segue reference="QyY-AR-JIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.42590153879999998" green="0.37582338240000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
