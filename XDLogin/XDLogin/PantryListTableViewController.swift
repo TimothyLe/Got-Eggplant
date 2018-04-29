@@ -68,8 +68,8 @@ class PantryListTableViewController: UITableViewController {
 //        userCountBarButtonItem.tintColor = UIColor.white
 //        navigationItem.leftBarButtonItem = userCountBarButtonItem
         
-        user = User(uid: "FakeId", email: "hungry@person.food")
-        
+        user = User(uid: "Google", email: "google@google.com")
+
         ref.queryOrdered(byChild: "completed").observe(.value, with: { snapshot in
             var newItems: [GroceryItem] = []
             
@@ -134,20 +134,20 @@ class PantryListTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 1
-        guard let cell = tableView.cellForRow(at: indexPath) else { return }
-        // 2
-        let groceryItem = items[indexPath.row]
-        // 3
-        let toggledCompletion = !groceryItem.completed
-        // 4
-//        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
-        // 5
-        groceryItem.ref?.updateChildValues([
-            "completed": toggledCompletion
-            ])
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // 1
+//        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+//        // 2
+//        let groceryItem = items[indexPath.row]
+//        // 3
+//        let toggledCompletion = !groceryItem.completed
+//        // 4
+////        toggleCellCheckbox(cell, isCompleted: toggledCompletion)
+//        // 5
+//        groceryItem.ref?.updateChildValues([
+//            "completed": toggledCompletion
+//            ])
+//    }
     
 //    func toggleCellCheckbox(_ cell: UITableViewCell, isCompleted: Bool) {
 //        if !isCompleted {
