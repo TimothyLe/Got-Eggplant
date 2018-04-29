@@ -13,4 +13,8 @@ target 'XDLogin' do
     
     pod 'FirebaseUI/Google'
     pod 'FirebaseUI/Facebook'
+    
+    pod 'MaterialComponents/AppBar'
+    pod 'MaterialComponents/Buttons'
+    pod 'MaterialComponents/Collections'
 end

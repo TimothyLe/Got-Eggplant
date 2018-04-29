@@ -52,7 +52,7 @@ class PantryListTableViewController: UITableViewController {
     // MARK: Properties
     var items: [GroceryItem] = []
     var user: User!
-    var userCountBarButtonItem: UIBarButtonItem!
+//    var userCountBarButtonItem: UIBarButtonItem!
     
     // MARK: UIViewController Lifecycle
     
@@ -84,25 +84,25 @@ class PantryListTableViewController: UITableViewController {
             self.tableView.reloadData()
         })
         
-        Auth.auth().addStateDidChangeListener { auth, user in
-            guard let user = user else { return }
-            self.user = User(authData: user)
-            
-            // 1
-            let currentUserRef = self.usersRef.child(self.user.uid)
-            // 2
-            currentUserRef.setValue(self.user.email)
-            // 3
-            currentUserRef.onDisconnectRemoveValue()
-        }
+//        Auth.auth().addStateDidChangeListener { auth, user in
+//            guard let user = user else { return }
+//            self.user = User(authData: user)
+//
+//            // 1
+//            let currentUserRef = self.usersRef.child(self.user.uid)
+//            // 2
+//            currentUserRef.setValue(self.user.email)
+//            // 3
+//            currentUserRef.onDisconnectRemoveValue()
+//        }
         
-        usersRef.observe(.value, with: { snapshot in
-            if snapshot.exists() {
-                self.userCountBarButtonItem?.title = snapshot.childrenCount.description
-            } else {
-                self.userCountBarButtonItem?.title = "0"
-            }
-        })
+//        usersRef.observe(.value, with: { snapshot in
+//            if snapshot.exists() {
+//                self.userCountBarButtonItem?.title = snapshot.childrenCount.description
+//            } else {
+//                self.userCountBarButtonItem?.title = "0"
+//            }
+//        })
     }
     
     // MARK: UITableView Delegate methods

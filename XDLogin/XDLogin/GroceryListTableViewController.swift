@@ -11,6 +11,7 @@ import FirebaseCore
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class GroceryListTableViewController: UITableViewController {
     
     let ref = Database.database().reference(withPath: "grocery-items")
@@ -29,9 +30,7 @@ class GroceryListTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func pantryListButton(_ sender: Any) {
-        performSegue(withIdentifier: "GroceryToPantrySegue", sender: self)
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,7 +55,6 @@ class GroceryListTableViewController: UITableViewController {
     // MARK: Properties
     var items: [GroceryItem] = []
     var user: User!
-    var userCountBarButtonItem: UIBarButtonItem!
     
     // MARK: UIViewController Lifecycle
     
@@ -65,12 +63,6 @@ class GroceryListTableViewController: UITableViewController {
         
         tableView.allowsMultipleSelectionDuringEditing = false
         
-        userCountBarButtonItem = UIBarButtonItem(title: "1",
-                                                 style: .plain,
-                                                 target: self,
-                                                 action: #selector(userCountButtonDidTouch))
-        userCountBarButtonItem.tintColor = UIColor.white
-        navigationItem.leftBarButtonItem = userCountBarButtonItem
         
         user = User(uid: "FakeId", email: "hungry@person.food")
         
@@ -86,25 +78,6 @@ class GroceryListTableViewController: UITableViewController {
             self.tableView.reloadData()
         })
         
-//                Auth.auth().addStateDidChangeListener { auth, user in
-//                    guard let user = user else { return }
-//                    self.user = User(authData: user)
-//        
-//                    // 1
-//                    let currentUserRef = self.usersRef.child(self.user.uid)
-//                    // 2
-//                    currentUserRef.setValue(self.user.email)
-//                    // 3
-//                    currentUserRef.onDisconnectRemoveValue()
-//                }
-        
-        usersRef.observe(.value, with: { snapshot in
-            if snapshot.exists() {
-                self.userCountBarButtonItem?.title = snapshot.childrenCount.description
-            } else {
-                self.userCountBarButtonItem?.title = "0"
-            }
-        })
     }
     
     // MARK: UITableView Delegate methods

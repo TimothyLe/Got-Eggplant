@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -102,7 +102,7 @@
                         <outlet property="emailText" destination="xm3-hm-mEM" id="TuS-Z6-x7E"/>
                         <outlet property="passwordText" destination="OSX-VP-EXN" id="hYU-ry-ZL9"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginToHomeSegue" id="12O-Jk-yez"/>
-                        <segue destination="paD-BL-jvo" kind="presentation" identifier="LoginToGrocerySegue" id="cil-Qb-i8A"/>
+                        <segue destination="eBd-De-yPE" kind="presentation" identifier="loginToMain" id="qtU-vR-otP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9C-FU-DdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +169,7 @@
                         <outlet property="passwordText" destination="ytZ-MC-erD" id="xx2-0M-6dD"/>
                         <outlet property="usernameText" destination="SgT-Hi-9AU" id="Iv5-dz-iqI"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="SignupToHomeSegue" id="DNC-ri-dQX"/>
-                        <segue destination="paD-BL-jvo" kind="presentation" identifier="SignupToGrocerySegue" id="Uw3-3n-lHk"/>
+                        <segue destination="eBd-De-yPE" kind="presentation" identifier="signupToMain" id="BUe-A0-veo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0w-y4-DmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,16 +200,6 @@
                                         <state key="normal" title="Logout"/>
                                         <connections>
                                             <action selector="logoutButton:" destination="paD-BL-jvo" eventType="touchUpInside" id="J42-66-JMi"/>
-                                        </connections>
-                                    </button>
-                                </barButtonItem>
-                                <barButtonItem style="plain" id="dF9-OX-p8E">
-                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oHf-93-X2H">
-                                        <rect key="frame" x="86.5" y="7" width="73" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Pantry List"/>
-                                        <connections>
-                                            <action selector="pantryListButton:" destination="paD-BL-jvo" eventType="touchUpInside" id="Qc7-HO-ia8"/>
                                         </connections>
                                     </button>
                                 </barButtonItem>
@@ -246,6 +236,7 @@
                             <outlet property="delegate" destination="paD-BL-jvo" id="rLv-uf-Vk3"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Grocery List" image="eggplant" selectedImage="eggplant" id="fQ0-vb-nDc"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Grocery List" id="Pay-a7-9AD">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2d2-Dh-QyI"/>
@@ -258,7 +249,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIG-Bd-b1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2511" y="95"/>
+            <point key="canvasLocation" x="3448.8000000000002" y="94.902548725637189"/>
         </scene>
         <!--Pantry List Table View Controller-->
         <scene sceneID="l7p-fm-pAn">
@@ -299,6 +290,7 @@
                             <outlet property="delegate" destination="BpU-0i-5Os" id="KSO-wT-K3q"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Pantry" image="shopping-list" id="PbS-vq-F0O"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Pantry List" id="fiA-1Q-Q2I">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bqj-fQ-311"/>
@@ -307,12 +299,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzO-5G-Zd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3745" y="95"/>
+            <point key="canvasLocation" x="4684" y="94.902548725637189"/>
         </scene>
         <!--Scanner Controller-->
         <scene sceneID="Q4s-zB-AaY">
             <objects>
-                <viewController id="lpy-wU-mhj" customClass="QRScannerController" customModule="QRCodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lpy-wU-mhj" customClass="QRScannerController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H2n-xb-xWs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,15 +374,39 @@
             </objects>
             <point key="canvasLocation" x="84" y="963"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="ccy-Qj-e5a">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="eBd-De-yPE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="li4-kI-e6z"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4HG-Qr-rwE"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FvM-MB-krG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="paD-BL-jvo" kind="relationship" relationship="viewControllers" id="0xa-Ec-jWa"/>
+                        <segue destination="BpU-0i-5Os" kind="relationship" relationship="viewControllers" id="J5e-Sx-alQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eh5-g1-hra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2509.5999999999999" y="94.902548725637189"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Login Page" width="375" height="667"/>
         <image name="Sign up page" width="375" height="667"/>
         <image name="Splash page" width="375" height="667"/>
         <image name="cross" width="40" height="40"/>
+        <image name="eggplant" width="32" height="32"/>
+        <image name="shopping-list" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cil-Qb-i8A"/>
+        <segue reference="BUe-A0-veo"/>
+        <segue reference="cYn-a4-zcV"/>
         <segue reference="QyY-AR-JIH"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.42590153879999998" green="0.37582338240000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

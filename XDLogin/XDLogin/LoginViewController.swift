@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     
     @IBAction func backToHomeButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "LoginToHomeSegue", sender: self)
+        performSegue(withIdentifier: "LogintoHomeSegue", sender: self)
     }
     
     @IBAction func loginButton(_ sender: Any) {
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
                     print("You have successfully logged in")
                     
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "groceryListScreen")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "tabBar")
                     self.present(vc!, animated: true, completion: nil)
                     
                 } else {
