@@ -218,7 +218,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rTa-H8-zLA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="aWG-6B-uWF"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="aWG-6B-uWF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E02-P9-gI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -444,11 +444,12 @@
         <image name="barcode" width="32" height="32"/>
         <image name="cross" width="40" height="40"/>
         <image name="eggplant" width="32" height="32"/>
+        <image name="settings" width="32" height="32"/>
         <image name="shopping-list" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BUe-A0-veo"/>
-        <segue reference="cYn-a4-zcV"/>
+        <segue reference="J5e-Sx-alQ"/>
         <segue reference="QyY-AR-JIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.42590153879999998" green="0.37582338240000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
