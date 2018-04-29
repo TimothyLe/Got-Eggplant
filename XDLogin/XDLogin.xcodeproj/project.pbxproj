@@ -23,6 +23,9 @@
 		3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA6632085540C00014B74 /* XDLogin.xcdatamodeld */; };
 		3F9FA6672085540C00014B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6662085540C00014B74 /* Assets.xcassets */; };
 		3F9FA66A2085540C00014B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6682085540C00014B74 /* LaunchScreen.storyboard */; };
+		3FB55BA320967B99000A7AF6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55BA220967B99000A7AF6 /* MapViewController.swift */; };
+		3FB55BA520967BBF000A7AF6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55BA420967BBF000A7AF6 /* SearchBar.swift */; };
+		3FB55BA720967BDD000A7AF6 /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55BA620967BDD000A7AF6 /* ArtWork.swift */; };
 		404F56482095979000CD2C1E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404F56472095979000CD2C1E /* SettingsViewController.swift */; };
 		AB6EF209D0C965A8D93E4C5B /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		3F9FA6692085540C00014B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9FA66B2085540C00014B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9FA672208560CE00014B74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3FB55BA220967B99000A7AF6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3FB55BA420967BBF000A7AF6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3FB55BA620967BDD000A7AF6 /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		3FBD59932086B88100AB57B6 /* XDLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XDLogin.entitlements; sourceTree = "<group>"; };
 		404F56472095979000CD2C1E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		939BD03F2107187EA66C5C8E /* Pods-XDLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,14 +115,17 @@
 				3F9FA6632085540C00014B74 /* XDLogin.xcdatamodeld */,
 				3F9FA65E2085540C00014B74 /* ViewController.swift */,
 				3F6883A62086CDC20044D49B /* LoginViewController.swift */,
+				3FB55BA220967B99000A7AF6 /* MapViewController.swift */,
 				3F6883A82086CE960044D49B /* SignupViewController.swift */,
 				22CFC8FF209581CF00A58714 /* BarcodeScannerController.swift */,
 				3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */,
 				22D6E8D1209040FF00D0DB5E /* PantryListTableViewController.swift */,
 				22D5F03120948F6300E597FE /* GroceryItem.swift */,
+				3FB55BA420967BBF000A7AF6 /* SearchBar.swift */,
 				22D5F03320948F6F00E597FE /* User.swift */,
 				3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */,
 				404F56472095979000CD2C1E /* SettingsViewController.swift */,
+				3FB55BA620967BDD000A7AF6 /* ArtWork.swift */,
 			);
 			path = XDLogin;
 			sourceTree = "<group>";
@@ -303,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB55BA520967BBF000A7AF6 /* SearchBar.swift in Sources */,
 				3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */,
 				22D6E8D2209040FF00D0DB5E /* PantryListTableViewController.swift in Sources */,
 				404F56482095979000CD2C1E /* SettingsViewController.swift in Sources */,
@@ -310,7 +320,9 @@
 				3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */,
 				3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */,
 				3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */,
+				3FB55BA320967B99000A7AF6 /* MapViewController.swift in Sources */,
 				3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */,
+				3FB55BA720967BDD000A7AF6 /* ArtWork.swift in Sources */,
 				22CFC900209581CF00A58714 /* BarcodeScannerController.swift in Sources */,
 				22D5F03220948F6300E597FE /* GroceryItem.swift in Sources */,
 				22D5F03420948F6F00E597FE /* User.swift in Sources */,
