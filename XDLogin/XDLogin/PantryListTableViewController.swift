@@ -68,8 +68,8 @@ class PantryListTableViewController: UITableViewController {
 //        userCountBarButtonItem.tintColor = UIColor.white
 //        navigationItem.leftBarButtonItem = userCountBarButtonItem
         
-        user = User(uid: "FakeId", email: "hungry@person.food")
-        
+        user = User(uid: "Google", email: "google@google.com")
+
         ref.queryOrdered(byChild: "completed").observe(.value, with: { snapshot in
             var newItems: [GroceryItem] = []
             
