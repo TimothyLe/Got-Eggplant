@@ -16,19 +16,6 @@ class GroceryListTableViewController: UITableViewController {
     let ref = Database.database().reference(withPath: "grocery-items")
     let usersRef = Database.database().reference(withPath: "online")
     
-    @IBAction func logoutButton(_ sender: Any) {
-        if Auth.auth().currentUser != nil {
-            do {
-                try Auth.auth().signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeScreen")
-                present(vc, animated: true, completion: nil)
-                
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        }
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

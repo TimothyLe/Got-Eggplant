@@ -23,6 +23,7 @@
 		3F9FA6652085540C00014B74 /* XDLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA6632085540C00014B74 /* XDLogin.xcdatamodeld */; };
 		3F9FA6672085540C00014B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6662085540C00014B74 /* Assets.xcassets */; };
 		3F9FA66A2085540C00014B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6682085540C00014B74 /* LaunchScreen.storyboard */; };
+		404F56482095979000CD2C1E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404F56472095979000CD2C1E /* SettingsViewController.swift */; };
 		AB6EF209D0C965A8D93E4C5B /* Pods_XDLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BC210F178099210C228A4A /* Pods_XDLogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		3F9FA66B2085540C00014B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9FA672208560CE00014B74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		3FBD59932086B88100AB57B6 /* XDLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XDLogin.entitlements; sourceTree = "<group>"; };
+		404F56472095979000CD2C1E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		939BD03F2107187EA66C5C8E /* Pods-XDLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDLogin/Pods-XDLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				22D5F03120948F6300E597FE /* GroceryItem.swift */,
 				22D5F03320948F6F00E597FE /* User.swift */,
 				3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */,
+				404F56472095979000CD2C1E /* SettingsViewController.swift */,
 			);
 			path = XDLogin;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */,
 				22D6E8D2209040FF00D0DB5E /* PantryListTableViewController.swift in Sources */,
+				404F56482095979000CD2C1E /* SettingsViewController.swift in Sources */,
 				3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */,
 				3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */,
 				3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */,

@@ -176,6 +176,54 @@
             </objects>
             <point key="canvasLocation" x="1356" y="1057"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="cNh-lt-b99">
+            <objects>
+                <viewController storyboardIdentifier="SettingsPage" title="Settings" id="fdC-fh-3nO" customClass="SettingsViewController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYg-i6-pNv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaX-cf-rWP">
+                                <rect key="frame" x="16" y="87" width="58" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEU-2E-kdD">
+                                <rect key="frame" x="16" y="122" width="120" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-Tl-omM">
+                                <rect key="frame" x="16" y="145" width="98" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTl-12-BcE">
+                                <rect key="frame" x="16" y="168" width="167" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log out of account "/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="fdC-fh-3nO" eventType="touchUpInside" id="KwS-HK-Tj2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rTa-H8-zLA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="aWG-6B-uWF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E02-P9-gI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3469.5999999999999" y="-573.46326836581716"/>
+        </scene>
         <!--Grocery List Table View Controller-->
         <scene sceneID="c59-Dc-HPe">
             <objects>
@@ -192,16 +240,6 @@
                                     <connections>
                                         <action selector="addButtonDidTouch:" destination="paD-BL-jvo" id="pW8-lc-Alo"/>
                                     </connections>
-                                </barButtonItem>
-                                <barButtonItem style="plain" id="qJu-WW-Cfr" userLabel="Logout">
-                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sRH-C1-PdH">
-                                        <rect key="frame" x="38.5" y="7" width="48" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Logout"/>
-                                        <connections>
-                                            <action selector="logoutButton:" destination="paD-BL-jvo" eventType="touchUpInside" id="J42-66-JMi"/>
-                                        </connections>
-                                    </button>
                                 </barButtonItem>
                             </items>
                         </toolbar>
@@ -290,7 +328,7 @@
                             <outlet property="delegate" destination="BpU-0i-5Os" id="KSO-wT-K3q"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Pantry" image="eggplant" id="PbS-vq-F0O"/>
+                    <tabBarItem key="tabBarItem" title="Pantry" image="eggplant" selectedImage="eggplant" id="PbS-vq-F0O"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Pantry List" id="fiA-1Q-Q2I">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bqj-fQ-311"/>
@@ -363,7 +401,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nNq-he-CQi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scanner" image="barcode" id="9Av-pe-XY3"/>
+                    <tabBarItem key="tabBarItem" title="Scanner" image="barcode" selectedImage="barcode" id="9Av-pe-XY3"/>
                     <connections>
                         <outlet property="messageLabel" destination="NfQ-To-EhX" id="ZuU-ho-QP7"/>
                         <outlet property="topBar" destination="1o4-G5-r6n" id="kFI-ya-oDc"/>
@@ -391,6 +429,7 @@
                         <segue destination="paD-BL-jvo" kind="relationship" relationship="viewControllers" id="0xa-Ec-jWa"/>
                         <segue destination="BpU-0i-5Os" kind="relationship" relationship="viewControllers" id="J5e-Sx-alQ"/>
                         <segue destination="lpy-wU-mhj" kind="relationship" relationship="viewControllers" id="DWB-u4-Dtb"/>
+                        <segue destination="fdC-fh-3nO" kind="relationship" relationship="viewControllers" id="au0-p8-zba"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eh5-g1-hra" userLabel="First Responder" sceneMemberID="firstResponder"/>
