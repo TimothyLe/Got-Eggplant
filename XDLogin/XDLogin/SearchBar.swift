@@ -2,7 +2,7 @@
 //  SearchBar.swift
 //  mapView
 //
-//  Created by student on 4/22/18.
+//  Created by Team Swifters on 4/22/18.
 //  Copyright © 2018 The-Windows-Specialists. All rights reserved.
 //
 

@@ -1,0 +1,73 @@
+f4128b5 was Thinh Le, 14 minutes ago, message: ArtworkViews file created, might need storyboard tab segue
+1208940 was Thinh Le, 18 minutes ago, message: Fixed
+f83aa76 was Timothy Wu, 30 minutes ago, message: README updated
+6fda4b4 was Thinh Le, 63 minutes ago, message: Merge branch 'master' of https://github.com/TimothyLe/Got-Eggplant
+78e6f4e was Thinh Le, 63 minutes ago, message: MapView changes transferred over
+870b305 was David Tran, 2 hours ago, message: Completed BarcodeScanner
+3f79695 was David Tran, 4 hours ago, message: Connected MapView to NavigationController and TabBar
+79712c5 was Thinh Le, 4 hours ago, message: Resolved references
+22c70dd was Thinh Le, 5 hours ago, message: MapView files integrated into XDLogin
+c99ca24 was Thinh Le, 5 hours ago, message: Resolved storyboard references
+8cbe146 was David Tran, 5 hours ago, message: Fixed BarcodeScanner reference
+848d5cb was Cherie Sew, 21 hours ago, message: Settings icon
+5f86868 was Cherie Sew, 21 hours ago, message: Settings Page for Log Out
+431a73d was Cherie Sew, 21 hours ago, message: Tab Bar for Barcode Scanner
+eaa4f7b was Timothy Wu, 22 hours ago, message: Clean up and fix issue with barcodescanner file
+a795b67 was Thinh Le, 24 hours ago, message: Removed unnecessary directories (preserved in branch 'mapView'): Got-Eggplant, mapView
+b7305a4 was David Tran, 25 hours ago, message: Storyboard fixed
+28fe793 was Cherie Sew, 25 hours ago, message: merged?
+279b113 was Cherie Sew, 25 hours ago, message: Tab Bar by Cherie
+0269adf was Timothy Wu, 26 hours ago, message: User information changed
+9b25f7d was Timothy Wu, 27 hours ago, message: Pantry check mark feature disabled
+170cbcc was Timothy Wu, 28 hours ago, message: Pantry List fix
+ff9c0a9 was Thinh Le, 28 hours ago, message: MapView SearchBar implementation currently bugged and passing. Need to resolves issues in MapViewController.swift
+e7bdb69 was David Tran, 29 hours ago, message: Added files to XDLogin
+55974b4 was David Tran, 29 hours ago, message: Barcode Scanner
+5a571b7 was Timothy Wu, 2 days ago, message: Merge pull request #7 from TimothyLe/FirebaseDatabase
+408ee32 was Timothy Wu, 2 days ago, message: Issues with some swift files, has been fixed
+30d1f92 was Timothy Wu, 4 days ago, message: README's fixed
+4cb93d2 was Timothy Wu, 5 days ago, message: Pantry List intial test
+1acea7e was Timothy Wu, 6 days ago, message: Grocery List is now working, needs fixing for which user is logged in
+c443e38 was Timothy Wu, 6 days ago, message: Fixed all the previous errors with Firebase Database, but error now thrown when pressing Add button
+e40ac1a was Timothy Wu, 7 days ago, message: Fixed database pod and reduced amount of errors in GroceryList view controller
+ca32c60 was Timothy Wu, 7 days ago, message: Added Grocery List using Firebase, but issues with GroceryList Swift file
+04aa279 was Thinh Le, 7 days ago, message: MapView demo works
+320497a was Thinh Le, 7 days ago, message: MapView demo
+7cb1c6b was Timothy Wu, 7 days ago, message: Navigation fix
+9cb7d9b was Thinh Le, 7 days ago, message: MapKit works again
+ed9bcfc was Cherie Sew, 7 days ago, message: Merge pull request #5 from TimothyLe/Login
+fc3ad1a was Timothy Wu, 7 days ago, message: Fixed textfield placeholders and colors, added app icon
+dcdf887 was Timothy Wu, 8 days ago, message: Remainder code
+abeaf2c was Timothy Wu, 9 days ago, message: Cleaned up all the views, removed facebook/google, added backtohome buttons
+99bf107 was Timothy Wu, 9 days ago, message: XD Assets
+5d82d18 was Timothy Wu, 11 days ago, message: Removed files
+625bfa9 was Timothy Wu, 12 days ago, message: XDLogin zip
+192fbf5 was Timothy Wu, 12 days ago, message: XDLogin README
+84bbf81 was Timothy Wu, 12 days ago, message: XDLogin screenshots
+00e5214 was Timothy Wu, 12 days ago, message: Issue with git on terminal
+e49e22e was Timothy Wu, 12 days ago, message: Wrap up for XDLogin submission
+3b4f84c was Cherie Sew, 12 days ago, message: Navigation Controller implemented along with multiple segues for manual routing between Login/Sign Up VC and Dummy VC
+4c6da30 was Cherie Sew, 12 days ago, message: Implementation of the username/password gray text fields + password securing
+afa5e40 was Cherie Sew, 12 days ago, message: Google plist :(
+a2c7d5f was Cherie Sew, 12 days ago, message: Added missing Google plist
+9400d0b was Cherie Sew, 12 days ago, message: Signup/Login/Logout Functions
+b5ff904 was Thinh Le, 12 days ago, message: Delete extra Got Eggplant title
+0e7089b was Thinh Le, 12 days ago, message: Removed merge conflicts from unrelated histories
+884fa20 was Thinh Le, 12 days ago, message: Remove unrelated histories merge conflict
+aa28a42 was Thinh Le, 12 days ago, message: Login project with XD + Firebase
+efe9587 was Thinh Le, 12 days ago, message: Removed XDLogin
+30de618 was Thinh Le, 12 days ago, message: Login with XD and Firebase
+3a93d4f was Thinh Le, 12 days ago, message: Firebase Login
+331cb3c was Timothy Wu, 8 weeks ago, message: Testing git
+d126216 was Thinh Le, 9 weeks ago, message: Reduce the image size of logo
+e04055e was Thinh Le, 9 weeks ago, message: Image dimensions
+41ff03e was Thinh Le, 9 weeks ago, message: HTML tags + CSS for title and images
+6b0eb89 was Cherie Sew, 9 weeks ago, message: Tim's OCD
+0756555 was Cherie Sew, 9 weeks ago, message: Update Readme
+693d1a0 was Thinh Le, 9 weeks ago, message: Git Terminal Push via MacOS
+ba48464 was David Tran, 9 weeks ago, message: AVFoundation Camera
+2072142 was Timothy Wu, 9 weeks ago, message: Added button and label to test UIkit
+e35a9f3 was Timothy Wu, 9 weeks ago, message: Modify README, added Xcode project, added Cloudkit
+dafc580 was Timothy Wu, 9 weeks ago, message: Updated README
+b404c3c was Thinh Le, 9 weeks ago, message: Update description
+d0f6959 was Thinh Le, 9 weeks ago, message: Initial commit

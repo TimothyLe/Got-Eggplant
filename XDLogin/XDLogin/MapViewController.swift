@@ -1,8 +1,7 @@
 //
 //  MapViewController.swift
-//  GotEggplant
 //
-//  Created by student on 4/22/18.
+//  Created by Team Swifters on 4/22/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
 //
 
