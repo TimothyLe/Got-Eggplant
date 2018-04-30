@@ -17,6 +17,7 @@
 		3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A62086CDC20044D49B /* LoginViewController.swift */; };
 		3F6883A92086CE970044D49B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883A82086CE960044D49B /* SignupViewController.swift */; };
 		3F6883AB2086D5740044D49B /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */; };
+		3F90F0282096BC43007D8568 /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F0272096BC43007D8568 /* ArtworkViews.swift */; };
 		3F9FA65D2085540B00014B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65C2085540B00014B74 /* AppDelegate.swift */; };
 		3F9FA65F2085540C00014B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9FA65E2085540C00014B74 /* ViewController.swift */; };
 		3F9FA6622085540C00014B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FA6602085540C00014B74 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		3F6883A62086CDC20044D49B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F6883A82086CE960044D49B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3F6883AA2086D5740044D49B /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		3F90F0272096BC43007D8568 /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		3F9FA6592085540B00014B74 /* XDLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9FA65C2085540B00014B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9FA65E2085540C00014B74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				3F03C3E02086E6AD00B94616 /* GoogleService-Info.plist */,
 				404F56472095979000CD2C1E /* SettingsViewController.swift */,
 				3FB55BA620967BDD000A7AF6 /* ArtWork.swift */,
+				3F90F0272096BC43007D8568 /* ArtworkViews.swift */,
 			);
 			path = XDLogin;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB55BA520967BBF000A7AF6 /* SearchBar.swift in Sources */,
+				3F90F0282096BC43007D8568 /* ArtworkViews.swift in Sources */,
 				3F6883A72086CDC20044D49B /* LoginViewController.swift in Sources */,
 				22D6E8D2209040FF00D0DB5E /* PantryListTableViewController.swift in Sources */,
 				404F56482095979000CD2C1E /* SettingsViewController.swift in Sources */,
