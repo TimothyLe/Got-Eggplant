@@ -342,7 +342,7 @@
         <!--Scanner-->
         <scene sceneID="Q4s-zB-AaY">
             <objects>
-                <viewController id="lpy-wU-mhj" customClass="QRScannerController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lpy-wU-mhj" customClass="BarcodeScannerController" customModule="XDLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H2n-xb-xWs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,7 +390,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="NfQ-To-EhX" firstAttribute="leading" secondItem="nNq-he-CQi" secondAttribute="leading" id="0ts-YS-Pf0"/>
                             <constraint firstItem="nNq-he-CQi" firstAttribute="trailing" secondItem="NfQ-To-EhX" secondAttribute="trailing" id="9Hp-x5-uXh"/>
@@ -403,14 +403,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Scanner" image="barcode" selectedImage="barcode" id="9Av-pe-XY3"/>
                     <connections>
-                        <outlet property="messageLabel" destination="NfQ-To-EhX" id="ZuU-ho-QP7"/>
-                        <outlet property="topBar" destination="1o4-G5-r6n" id="kFI-ya-oDc"/>
+                        <outlet property="messageLabel" destination="NfQ-To-EhX" id="0Eb-NU-P0W"/>
+                        <outlet property="topBar" destination="1o4-G5-r6n" id="ZZr-Rg-yzH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYx-TJ-7n7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="IbO-ck-Ow5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3449" y="907"/>
+            <point key="canvasLocation" x="3448.8000000000002" y="906.29685157421295"/>
         </scene>
         <!--MapViewController-->
         <scene sceneID="XJH-1f-SLd">
@@ -478,8 +478,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BUe-A0-veo"/>
-        <segue reference="J5e-Sx-alQ"/>
-        <segue reference="QyY-AR-JIH"/>
+        <segue reference="cYn-a4-zcV"/>
+        <segue reference="DNC-ri-dQX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.42590153879999998" green="0.37582338240000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
