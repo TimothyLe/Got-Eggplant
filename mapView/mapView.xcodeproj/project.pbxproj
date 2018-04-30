@@ -15,6 +15,7 @@
 		3F0167B4208D3E0E0048B1DC /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0167B3208D3E0E0048B1DC /* Artwork.swift */; };
 		3F0167B6208D3E2C0048B1DC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0167B5208D3E2C0048B1DC /* MapViewController.swift */; };
 		3F0167B8208D5EEC0048B1DC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0167B7208D5EEC0048B1DC /* SearchBar.swift */; };
+		3FB55BA920969D40000A7AF6 /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB55BA820969D40000A7AF6 /* ArtworkViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3F0167B3208D3E0E0048B1DC /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		3F0167B5208D3E2C0048B1DC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3F0167B7208D5EEC0048B1DC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		3FB55BA820969D40000A7AF6 /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3F0167A8208D3DDA0048B1DC /* Assets.xcassets */,
 				3F0167AA208D3DDA0048B1DC /* LaunchScreen.storyboard */,
 				3F0167AD208D3DDA0048B1DC /* Info.plist */,
+				3FB55BA820969D40000A7AF6 /* ArtworkViews.swift */,
 			);
 			path = mapView;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0167A4208D3DD90048B1DC /* ViewController.swift in Sources */,
+				3FB55BA920969D40000A7AF6 /* ArtworkViews.swift in Sources */,
 				3F0167B4208D3E0E0048B1DC /* Artwork.swift in Sources */,
 				3F0167B8208D5EEC0048B1DC /* SearchBar.swift in Sources */,
 				3F0167A2208D3DD90048B1DC /* AppDelegate.swift in Sources */,

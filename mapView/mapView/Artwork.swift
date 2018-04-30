@@ -38,6 +38,22 @@ class Artwork: NSObject, MKAnnotation
         return locationName
     }
     
+    // Changes the color of the markers in mapView
+    var markerColor: UIColor {
+        switch discipline {
+        case "Grocery":
+            return .red
+        case "Convenience":
+            return .cyan
+        case "General":
+            return .brown
+        case "Liquor Store":
+            return .purple
+        default:
+            return .orange
+        }
+    }
+    
     // Creates MKMapItem from MKPlacemark
     // Maps reads this and displays it correctly
     func mapItem() -> MKMapItem
