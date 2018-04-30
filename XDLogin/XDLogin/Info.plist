@@ -4,6 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Got Eggplant would like to use your current location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Got Eggplant would like to use your current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Got Eggplant would like to use your current location</string>
 	<key>CFBundleDisplayName</key>
 	<string>Got Eggplant?</string>
 	<key>CFBundleExecutable</key>
