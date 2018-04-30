@@ -8,11 +8,12 @@ import UIKit
 import AVFoundation
 
 class BarcodeScannerController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-    
-    @IBOutlet weak var messageLabel: UILabel!
+
     @IBOutlet weak var topBar: UIView!
+    @IBOutlet weak var messageLabel: UILabel!
     
-    var captureSession : AVCaptureSession?
+    
+    var captureSession = AVCaptureSession()
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var barcodeFrameView: UIView?
     
@@ -39,10 +40,10 @@ class BarcodeScannerController: UIViewController, AVCaptureMetadataOutputObjects
         }
         do {
             let input = try AVCaptureDeviceInput(device: captureDevice)
-            captureSession?.addInput(input)
+            captureSession.addInput(input)
             
             let captureMetadataOutput = AVCaptureMetadataOutput()
-            captureSession?.addOutput(captureMetadataOutput)
+            captureSession.addOutput(captureMetadataOutput)
             
             captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = supportedCodeTypes
@@ -51,12 +52,13 @@ class BarcodeScannerController: UIViewController, AVCaptureMetadataOutputObjects
             print(error)
             return
         }
-        videoPreviewLayer =  AVCaptureVideoPreviewLayer(session: captureSession!)
+        videoPreviewLayer =  AVCaptureVideoPreviewLayer(session: captureSession)
         videoPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
         videoPreviewLayer?.frame = view.layer.bounds
         view.layer.addSublayer(videoPreviewLayer!)
         
-        captureSession?.startRunning()
+        captureSession.startRunning()
+        
         view.bringSubview(toFront: messageLabel)
         view.bringSubview(toFront: topBar)
         
