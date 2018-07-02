@@ -2,7 +2,7 @@
 //  ArtworkViews.swift
 //  mapView
 //
-//  Created by student on 4/29/18.
+//  Created by Team Swifters on 4/29/18.
 //  Copyright © 2018 The-Windows-Specialists. All rights reserved.
 //
 

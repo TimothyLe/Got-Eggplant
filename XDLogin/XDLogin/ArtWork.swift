@@ -2,7 +2,7 @@
 //  Artwork.swift
 //  Kit-test
 //
-//  Created by student on 2/28/18.
+//  Created by Team Swifters on 2/28/18.
 //  Copyright © 2018 The-Windows-Specialists. All rights reserved.
 //
 

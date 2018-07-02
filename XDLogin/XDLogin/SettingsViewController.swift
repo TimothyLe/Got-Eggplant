@@ -1,8 +1,7 @@
 //
 //  SettingsViewController.swift
-//  XDLogin
 //
-//  Created by Cherie Sew on 4/28/18.
+//  Created by Team Swifters on 4/28/18.
 //  Copyright © 2018 San Jose State University. All rights reserved.
 //
 
